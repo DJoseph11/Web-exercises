@@ -8,5 +8,6 @@ var checkingTypeOf = function(item) {
     return
 
 }
+gg
 
 checkingTypeOf();

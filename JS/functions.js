@@ -90,7 +90,22 @@ console.log(calculateTip(25, 25.50));
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-prompt()
+
+
+
+console.log("---------------");
+
+var billTotal = prompt("What is the total? ");
+var tipPercent = prompt("Tip percent: ");
+alert("The total amount you should tip is:$"
+    + calculateTip(parseInt(billTotal), parseInt(tipPercent)));
+
+// function calcTip(percent, total) {
+//      total = prompt("What is the total? ");
+//      percent = prompt("Tip percent: ");
+// }
+
+console.log("------------------------");
 
 /**
  * TODO:
@@ -106,3 +121,11 @@ prompt()
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+function applyDiscount(price, discountPercent) {
+    price = prompt("What is the price of item?:");
+    discountPercent = prompt("What is the discount?:");
+    return discountPercent / 100 * price;
+}
+
+console.log(applyDiscount(45.99, 12));

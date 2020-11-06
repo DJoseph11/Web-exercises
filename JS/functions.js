@@ -91,15 +91,11 @@ console.log(calculateTip(25, 25.50));
  * then display the dollar amount they should tip
  */
 
-
-
-console.log("---------------");
-
+// change the parameter of calculateTip
 var billTotal = prompt("What is the total? ");
 var tipPercent = prompt("Tip percent: ");
 alert("The total amount you should tip is:$"
-    + calculateTip(parseInt(billTotal), parseInt(tipPercent)));
-
+    + calculateTip(billTotal, tipPercent));
 // function calcTip(percent, total) {
 //      total = prompt("What is the total? ");
 //      percent = prompt("Tip percent: ");

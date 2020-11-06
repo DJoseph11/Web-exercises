@@ -163,7 +163,21 @@ console.log("---------------Total-----------------");
 total = googleTotal + amazonTotal + facebook
 console.log("$" + total.toFixed(2));
 
-// console.log("---------------3.3-----------------");
+console.log("---------------3.3-----------------");
+var student = true;
+var classNotFull = true;
+var classIsFull = false;
+var currentSchedule = true;
+var conflictedSchedule = false
+
+if (student == classNotFull && student == currentSchedule ) {
+    console.log("You have enrolled in the \'.....\' class.")
+} else {
+    console.log("Sorry the class is full.")
+}
+
+console.log("---------------3.4-----------------");
+
 
 
 

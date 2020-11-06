@@ -178,6 +178,32 @@ if (student == classNotFull && student == currentSchedule ) {
 
 console.log("---------------3.4-----------------");
 
+// writing this problem using functions
+
+function promo(offer) {
+    return function (itemCount) {
+        if (offer === "active" && itemCount >= 2) {
+            console.log("Offer can be applied to items.");
+
+        } else {
+            console.log("The offer cannot applied to items.");
+        }
+        if (offer === "expired" && itemCount >= 1 ) {
+            console.log("The offer is expired.");
+        }
+    }
+
+};
+
+var expiredOffer = promo("expired");
+var activeOffer = promo("active");
+
+expiredOffer(5);
+
+console.log("------------------")
+
+activeOffer(1);
+
 
 
 

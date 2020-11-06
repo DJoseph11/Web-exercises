@@ -220,30 +220,35 @@ var password = "notastrongpassword";
 //      username <= 20
 // neither the username or password can start or end with whitespace
 //      to trim password and user name
+console.log("-----------------Revise 4.0.1");
 
-var userName = "";
-var passWord = "";
+// start of revision
 
-var userLogin = function psWord(userInput) {
-    return function (username, password) {
-        if (username.length <= 20 && password.length >= 5) {
-            console("Good to go.");
-        }
-        if (username === password) {
+// var userName = "";
+// var passWord = "";
+//
+// var userLogin = function psWord(userInput) {
+//     return function (username, password) {
+//         if (username.length <= 20 && password.length >= 5) {
+//             console("Good to go.");
+//         }
+//         if (username === password) {
+//
+//         }
+//
+// }
+//
+//       var userLoginCheck =
+// // end of second reversion
+//
+//     // for (var i = 0; userInput.length >= 5; i++) {
+//     //     counter += i;
+//     //     if (input === true) {
+//     //         return passWord;
+//     //     }
+//     //
+//     }
 
-        }
+    // passWord("candy");
 
-}
-
-      var userLoginCheck =
-
-
-    // for (var i = 0; userInput.length >= 5; i++) {
-    //     counter += i;
-    //     if (input === true) {
-    //         return passWord;
-    //     }
-    //
-    }
-
-    passWord("candy");
+console.log("-----------Nov 6 2020 ------------")

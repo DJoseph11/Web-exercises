@@ -208,3 +208,42 @@ console.log("---------------4-----------------");
 var username = "codeup";
 var password = "notastrongpassword";
 
+
+// finding a to do this with function
+//
+// the password must be at least 5 characters
+//     password >= 5
+// the password must not include the username
+//      password !== username(input) needs to do a search in password
+//      !== not match part of username(input)
+// the username must be no more than 20 characters
+//      username <= 20
+// neither the username or password can start or end with whitespace
+//      to trim password and user name
+
+var userName = "";
+var passWord = "";
+
+var userLogin = function psWord(userInput) {
+    return function (username, password) {
+        if (username.length <= 20 && password.length >= 5) {
+            console("Good to go.");
+        }
+        if (username === password) {
+
+        }
+
+}
+
+      var userLoginCheck =
+
+
+    // for (var i = 0; userInput.length >= 5; i++) {
+    //     counter += i;
+    //     if (input === true) {
+    //         return passWord;
+    //     }
+    //
+    }
+
+    passWord("candy");

@@ -16,8 +16,8 @@ console.log("--------------------------");
 var d ="hello";
 var e = false;
 
-d++
-e++
+d++;
+e++;
 
 console.log(d);
 console.log(e);
@@ -36,8 +36,7 @@ price.toFixed(2);
 
 console.log(price.toFixed(2));
 
-console.log("--------------------------");
-
+console.log("--------------------------")
 // var price = "2.7";
 // console.log(price.toFixed(2));
 // // error because its looking for decimals point because its a string.
@@ -98,7 +97,7 @@ console.log("---------");
             !!"0",
         ];
 
-// !!"" an empty string is false anything with something inside ithe string is true
+// !!"" an empty string is false anything with something inside the string is true
 
 
     for (var i = 0; i < value.length; i++) {
@@ -115,14 +114,14 @@ var sample = "Hello Codeup";
 
 console.log(sample.length);
 
-console.log(sample.toUpperCase())
+console.log(sample.toUpperCase());
 
-console.log(sample.toLowerCase())
+console.log(sample.toLowerCase());
 
 console.log("--------------------------------");
 
 console.log(sample + " Students");
-console.log(sample + " Class")
+console.log(sample + " Class");
 
 console.log("--------------------------------");
 
@@ -138,9 +137,9 @@ var a1 = 3;
 var b2 = 5;
 var h = 1;
 
-total = (a1 * 3) + (b2 * 3) + (h * 3)
+total = (a1 * 3) + (b2 * 3) + (h * 3);
 
-console.log("$" + total.toFixed(2))
+console.log("$" + total.toFixed(2));
 
 console.log("---------------3.2-----------------");
 
@@ -152,15 +151,15 @@ var weekA = 4;
 var weekF = 10;
 
 googleTotal = google * weekG;
-console.log("$" + googleTotal)
+console.log("$" + googleTotal);
 
 amazonTotal = amazon * weekA;
-console.log("$" + amazonTotal)
+console.log("$" + amazonTotal);
 
 facebook = facebook * weekF;
 console.log("$" + facebook);
 console.log("---------------Total-----------------");
-total = googleTotal + amazonTotal + facebook
+total = googleTotal + amazonTotal + facebook;
 console.log("$" + total.toFixed(2));
 
 console.log("---------------3.3-----------------");
@@ -168,12 +167,12 @@ var student = true;
 var classNotFull = true;
 var classIsFull = false;
 var currentSchedule = true;
-var conflictedSchedule = false
+var conflictedSchedule = false;
 
 if (student == classNotFull && student == currentSchedule ) {
-    console.log("You have enrolled in the \'.....\' class.")
+    console.log("You have enrolled in the \'.....\' class.");
 } else {
-    console.log("Sorry the class is full.")
+    console.log("Sorry the class is full.");
 }
 
 console.log("---------------3.4-----------------");
@@ -193,22 +192,19 @@ function promo(offer) {
         }
     }
 
-};
+}
 
 var expiredOffer = promo("expired");
 var activeOffer = promo("active");
 
 expiredOffer(5);
 
-console.log("------------------")
+console.log("------------------");
 
 activeOffer(1);
 
+console.log("---------------4-----------------");
 
-
-
-
-
-
-// console.log("---------------4-----------------");
+var username = "codeup";
+var password = "notastrongpassword";
 

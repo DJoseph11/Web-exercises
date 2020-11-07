@@ -125,3 +125,4 @@ function applyDiscount(price, discountPercent) {
 }
 
 console.log(applyDiscount(45.99, 12));
+

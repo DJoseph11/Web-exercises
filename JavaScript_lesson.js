@@ -279,8 +279,21 @@ if (pizzaPreference === "pineapple and hot sauce") {
 *  you can have */
 if (condition) {    // the condition is where a true or false statement is place inside.
 //    and based on the condition the yes or no question, or true or false determined on what
-//    to run, either to execute the code that goes here or if the conditioin is false the else
+//    to run, either to execute the code that goes here or if the condition is false the else
 //    statement get executed instead. (((TRUE))))
+
+    /* a great example of a condition can be you in the old west cowboy days and you walked about to
+     walked into saloon but before you left your dwelling this morning you set yourself a reminder
+     to find opportunities to make some money, hey why not hint criminals always bring money
+      so you set and if or else statement to remind you if I see a criminal that looks likes the
+      wanted poster, dead or alive.
+
+    *  if statement for that is you set reminder for yourself.
+    *  "if (condition: criminal = seen) {
+    *      you can log "I remember seeing one of these guys two days ago in the valley behind the famous
+    *   mountain} else {
+            you can log something like this "never seen any of these guys, I should get that drink right about now"
+           }"*/
 } else {
 // (((FALSE)))) once again the code that goes here only get executed if the condition that was
 //    stated

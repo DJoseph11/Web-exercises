@@ -40,29 +40,29 @@ console.log("--------------------------")
 // var price = "2.7";
 // console.log(price.toFixed(2));
 // // error because its looking for decimals point because its a string.
-(function isNanfunction() {
-    var isNanvalue = [
-        0,
-        1,
-        "",
-        "string",
-        "0",
-        "1",
-        "3.15",
-        Number.MAX_VALUE,
-        Infinity,
-        "true",
-        true,
-        "false",
-        false];
-//         console.log(isNanvalue.length)
-    for (var i = 0; i < isNanvalue.length; i++) {
-        var output = "";
-        output = output + isNaN(isNanvalue[i]);
-        console.log(i + ": " + output);
-    }
-
-})();
+// (function isNanfunction() {
+//     var isNanvalue = [
+//         0,
+//         1,
+//         "",
+//         "string",
+//         "0",
+//         "1",
+//         "3.15",
+//         Number.MAX_VALUE,
+//         Infinity,
+//         "true",
+//         true,
+//         "false",
+//         false];
+// //         console.log(isNanvalue.length)
+//     for (var i = 0; i < isNanvalue.length; i++) {
+//         var output = "";
+//         output = output + isNaN(isNanvalue[i]);
+//         console.log(i + ": " + output);
+//     }
+//
+// })();
 
 console.log("---------");
 
@@ -251,4 +251,25 @@ console.log("-----------------Revise 4.0.1");
 
     // passWord("candy");
 
-console.log("-----------Nov 6 2020 ------------")
+console.log("-----------Conditionals----------");
+
+// typing out the example codes to get familiar with terms and logic
+
+var weShouldDeleteStuff = confirm("Are you sure you want to delete everything?");
+
+if (weShouldDeleteStuff) {
+
+} else {
+    alert("Operation Canceled!");
+}
+
+var pizzaPreference = prompt("What kind of pizza do you like?");
+
+if (pizzaPreference = "pineapple and hot sauce") {
+    alert("What a coincidence, that's my favorite!");
+}
+
+
+
+
+

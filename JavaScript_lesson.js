@@ -275,9 +275,16 @@ if (pizzaPreference === "pineapple and hot sauce") {
 
 
 }
-/*    ternary operator conditional takes three operands for example in if/ else statement
+/* ********* ternary operator conditional takes three operands for example in if/ else statement
 *  you can have */
-if (condition) {    // the condition is where a true or false statement is place inside.
+
+
+console.log("-----------------------------IF/else----------------------");
+
+var huntingCriminals;
+
+
+if (huntingCriminals) {    // the condition is where a true or false statement is place inside.
 //    and based on the condition the yes or no question, or true or false determined on what
 //    to run, either to execute the code that goes here or if the condition is false the else
 //    statement get executed instead. (((TRUE))))
@@ -289,19 +296,47 @@ if (condition) {    // the condition is where a true or false statement is place
       wanted poster, dead or alive.
 
     *  if statement for that is you set reminder for yourself.
-    *  "if (condition: criminal = seen) {
+    *  "if (condition: criminal === seen) {
     *      you can log "I remember seeing one of these guys two days ago in the valley behind the famous
-    *   mountain} else {
+    *   or an alert"Money opportunity!!! you have seen this criminal"
+      mountain} else {
             you can log something like this "never seen any of these guys, I should get that drink right about now"
            }"*/
 } else {
 // (((FALSE)))) once again the code that goes here only get executed if the condition that was
 //    stated
-
-
 }
 
 
+
+
+console.log("----------------------------Ternary------------------------");
+
+// Ternary is a shortcut for the (if) statement.
+
+
+// as far as the ternary operaor its syntax is
+// ***** "condition goes here"  ? "the true statement goes here" : "the false statement goes here"*****
+
+var huntingCriminals =
+    (ciminal === seen ) ? alert("Money opportunity!!! one of these criminal was seen") : "never seen any of these guys";
+
+
+function getFee(isMember) {
+    return (isMember ? '$2.00' : '$10.00'); // isMember is the condition here.
+}                                           // "2.00" if isMember is true and "10.00" if isMember is false
+
+
+//
+
+console.log(getFee(true));
+// expected output: "$2.00"
+
+console.log(getFee(false));
+// expected output: "$10.00"
+
+console.log(getFee(null));
+// expected output: "$10.00"
 
 
 
@@ -316,7 +351,13 @@ if (success) {
     message = "Oops, something went wrong."
 }
 
-var message = (success) ? "Operation was successful" : "Oops, something went wrong";
+
+
+// var message = (success) ? "Operation was successful" : "Oops, something went wrong";
+
+
+
+console.log("--------------------------Switch Statement---------------------")
 
 
 

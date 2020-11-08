@@ -265,10 +265,45 @@ if (weShouldDeleteStuff) {
 
 var pizzaPreference = prompt("What kind of pizza do you like?");
 
-if (pizzaPreference = "pineapple and hot sauce") {
+if (pizzaPreference === "pineapple and hot sauce") {
     alert("What a coincidence, that's my favorite!");
+} else if (pizzaPreference === "cheese") {
+    alert("Just plain? Okay...");
+} else {
+    alert(pizzaPreference + " isn't my favorite, but let's order some!");
+
+
+
+}
+/*    ternary operator conditional takes three operands for example in if/ else statement
+*  you can have */
+if (condition) {    // the condition is where a true or false statement is place inside.
+//    and based on the condition the yes or no question, or true or false determined on what
+//    to run, either to execute the code that goes here or if the conditioin is false the else
+//    statement get executed instead. (((TRUE))))
+} else {
+// (((FALSE)))) once again the code that goes here only get executed if the condition that was
+//    stated
+
+
 }
 
+
+
+
+
+
+console.log(pizzaPreference);
+
+var message;
+
+if (success) {
+    message = "Operation was successful.";
+} else {
+    message = "Oops, something went wrong."
+}
+
+var message = (success) ? "Operation was successful" : "Oops, something went wrong";
 
 
 

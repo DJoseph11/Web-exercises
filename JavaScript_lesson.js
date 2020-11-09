@@ -359,6 +359,32 @@ if (success) {
 
 console.log("--------------------------Switch Statement---------------------")
 
+// The switch statement can be used when more conditions need to be tested.
+// the code below can be explain the same as above. THe condition is [dayOfWk] and it is expected
+// for condition to process two conditions using the "or/ ||" operator which states that if either
+// conditioin is true to execute the code. either left or the right of the ||/or symbol.
+// and if either left of right is true then to execute the else statement for the alert.
 
+if (dayOfWk ==="Sat" || dayOfWk === "Sun") { alert("Whoopee!");
+	}
+ else if (dayOfWk === "Fri") {
+	 alert("TGIF!");
+	}
+else {
+	alert("Shoot me now!");
+}
+
+////// down below is switch statement example to show how conditions can be created another way.
+
+switch(dayOfWk) { 2 case "Sat" :
+	3 alert("Whoopee"); 4 break;
+	5 case "Sun" :
+	6 alert("Whoopee");
+	7 break;
+	8 case "Fri" :
+	9 alert("TGIF!");
+	10 break;
+	11 default :
+	12 alert("Shoot me now!"); 13 }
 
 

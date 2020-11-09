@@ -376,15 +376,16 @@ else {
 
 ////// down below is switch statement example to show how conditions can be created another way.
 
-switch(dayOfWk) { 2 case "Sat" :
-	3 alert("Whoopee"); 4 break;
-	5 case "Sun" :
-	6 alert("Whoopee");
-	7 break;
-	8 case "Fri" :
-	9 alert("TGIF!");
-	10 break;
-	11 default :
-	12 alert("Shoot me now!"); 13 }
+switch(dayOfWk) {
+	case "Sat" :
+	alert("Whoopee"); break;
+	case "Sun" :
+	alert("Whoopee");
+	break;
+	case "Fri" :
+	alert("TGIF!");
+	break;
+	default :
+	alert("Shoot me now!"); }
 
 

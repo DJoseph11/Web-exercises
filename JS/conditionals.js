@@ -38,6 +38,7 @@ function analyzeColor(input) {
 
 }
 
+console.log(analyzeColor("blue"))
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -58,8 +59,8 @@ console.log(analyzeColor(randomColor));
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
-function analyzeColorSwitch(input) {
-	switch (input) {
+function analyzeColorSwitch(color) {
+	switch (color) {
 	case "blue":
 		alert("blue is the color of the sky");
 		break;
@@ -209,4 +210,13 @@ var luckyNumber = Math.floor(Math.random() * 6);
  */
 
 var checking = confirm("Would you like to enter a num?");
-if (checking === truegit s)
+if (checking === true) {
+	var userInput = prompt("Enter number: ")
+	if (userInput % 2 === 0) {
+		alert(userInput + " is even")
+	} else  {
+		alert(userInput + " is odd")
+	}
+alert("The number plus 100 is: " + (parseFloat(userInput) + 100));
+
+}

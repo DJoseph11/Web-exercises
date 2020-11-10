@@ -21,22 +21,22 @@ console.log("test");
  */
 
 
-function analyzeColor(input) {
-
-	if (input === "blue") {
-		alert("blue is the color of the sky");
-	} else {
-		if (input === "red") {
-			alert("Strawberries are red");
-
-		} else if (input === "cyan") {
-			alert("I don't know anything about cyan");
-		} else {
-			alert("I dont recognize this color")
-		}
-	}
-
-}
+// function analyzeColor(input) {
+//
+// 	if (input === "blue") {
+// 		return "blue is the color of the sky";
+// 	} else {
+// 		if (input === "red") {
+// 			return "Strawberries are red";
+//
+// 		} else if (input === "cyan") {
+// 			return "I don't know anything about cyan";
+// 		} else {
+// 			return "I dont recognize this color" + input;
+// 		}
+// 	}
+//
+// }
 
 console.log(analyzeColor("blue"))
 
@@ -62,15 +62,13 @@ console.log(analyzeColor(randomColor));
 function analyzeColorSwitch(color) {
 	switch (color) {
 	case "blue":
-		alert("blue is the color of the sky");
-		break;
+		return "blue is the color of the sky";
 	case "red":
-		alert("Strawberries are red");
-		break;
+		return "Strawberries are red";
 	case "cyan":
-		alert("I don't know anything about cyan");
+		return "I don't know anything about cyan";
 		break;
-	default: alert("I dont recognize this color")
+	default: return "I dont recognize this color";
 
 
 }
@@ -112,30 +110,55 @@ console.log(analyzeColorSwitch(userColor));
 **/
 var luckyNumber = Math.floor(Math.random() * 6);
 
-function calculateTotal(num, total) {
-	if (num === 0) {
-		alert("No Discount");
-
-		return num / 100 * total;
-	} else if (num === 1) {
-		alert("Your discout is " + (10 / 100 * total) + "%");
-		return;
-	} else if (num === 2) {
-		alert("Your discout is " + (25 / 100 * total) + "%");
-		return;
-	} else if (num === 3) {
-		alert("Your discout is " + (35 / 100 * total) + "%");
-		return;
-	} else if (num === 4) {
-		alert("Your discout is " + (50 / 100 * total) + "%");
-		return;
-	} else if (num === 5) {
-		alert("Your discout is " + (10 / 100 * total) + "%");
-		return;
-	}
-}
+// function calculateTotal(num, total) {
+// 	if (num === 0) {
+// 		alert("No Discount");
+//
+// 		return num / 100 * total;
+// 	} else if (num === 1) {
+// 		alert("Your discout is " + (10 / 100 * total) + "%");
+// 		return;
+// 	} else if (num === 2) {
+// 		alert("Your discout is " + (25 / 100 * total) + "%");
+// 		return;
+// 	} else if (num === 3) {
+// 		alert("Your discout is " + (35 / 100 * total) + "%");
+// 		return;
+// 	} else if (num === 4) {
+// 		alert("Your discout is " + (50 / 100 * total) + "%");
+// 		return;
+// 	} else if (num === 5) {
+// 		alert("Your discout is " + (10 / 100 * total) + "%");
+// 		return;
+// 	}
+// }
 
 calculateTotal(luckyNumber, 100);
+
+// class
+
+function calculateTotal(luckyNumber, billTotal) {
+	switch (luckyNumber) {
+		case 0:
+			return billTotal;
+		case 1:
+			return billTotal - billTotal*.1;
+		case 2:
+			return billTotal - billTotal*.25;
+		case 3:
+			return billTotal - billTotal*.35;
+		case 4:
+			return billTotal - billTotal*.50;
+		case 5:
+			return 0;
+		default:
+			return "";
+
+
+	}
+
+}
+
 
 
 /**
@@ -149,17 +172,22 @@ calculateTotal(luckyNumber, 100);
 
 var inputTotal = prompt(" what is the total of bill?");
 
-// calculateTotal(luckyNumber, inputTotal)
-
-function total(input) {
-var percent = calculateTotal(luckyNumber, inputTotal);
-var afterDiscount = percent / 100 * inputTotal;
+inputTotal = parseFloat(inputTotal);
 
 alert("Your lucky number: " + luckyNumber + ", Price before discount: "
 	+ inputTotal + ", Price after discount: " +  afterDiscount);
-}
 
-total(inputTotal);
+// calculateTotal(luckyNumber, inputTotal)
+
+// function total(input) {
+// var percent = calculateTotal(luckyNumber, inputTotal);
+// var afterDiscount = percent / 100 * inputTotal;
+//
+// alert("Your lucky number: " + luckyNumber + ", Price before discount: "
+// 	+ inputTotal + ", Price after discount: " +  afterDiscount);
+// }
+//
+// total(inputTotal);
 
 // calculateTotal(luckyNumber, 100);
 

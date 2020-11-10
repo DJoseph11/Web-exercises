@@ -117,19 +117,19 @@ function calculateTotal(num, total) {
 
 		return num / 100 * total;
 	} else if (num === 1) {
-		alert("Your discout is " + (10 / 100 * 100) + "%");
+		alert("Your discout is " + (10 / 100 * total) + "%");
 		return;
 	} else if (num === 2) {
-		alert("Your discout is " + (25 / 100 * 100) + "%");
+		alert("Your discout is " + (25 / 100 * total) + "%");
 		return;
 	} else if (num === 3) {
-		alert("Your discout is " + (35 / 100 * 100) + "%");
+		alert("Your discout is " + (35 / 100 * total) + "%");
 		return;
 	} else if (num === 4) {
-		alert("Your discout is " + (50 / 100 * 100) + "%");
+		alert("Your discout is " + (50 / 100 * total) + "%");
 		return;
 	} else if (num === 5) {
-		alert("Your discout is " + (10 / 100 * 100) + "%");
+		alert("Your discout is " + (10 / 100 * total) + "%");
 		return;
 	}
 }
@@ -145,6 +145,7 @@ calculateTotal(luckyNumber, 100);
  * price before the discount was, and what their price after the discount is.
  */
 
+prompt(" what is the total of bill: " + )
 
 // Generate a random number between 0 and 6
 

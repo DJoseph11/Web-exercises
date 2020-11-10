@@ -145,7 +145,46 @@ calculateTotal(luckyNumber, 100);
  * price before the discount was, and what their price after the discount is.
  */
 
-prompt(" what is the total of bill: " + )
+
+var inputTotal = prompt(" what is the total of bill?");
+
+// calculateTotal(luckyNumber, inputTotal)
+
+function total(input) {
+var percent = calculateTotal(luckyNumber, inputTotal);
+var afterDiscount = percent / 100 * inputTotal;
+
+alert("Your lucky number: " + luckyNumber + ", Price before discount: "
+	+ inputTotal + ", Price after discount: " +  afterDiscount);
+}
+
+total(inputTotal);
+
+// calculateTotal(luckyNumber, 100);
+
+// var inputTotal = prompt(" what is the total of bill?");
+
+// calculateTotal(luckyNumber, inputTotal)
+// var percent = calculateTotal(luckyNumber, inputTotal);
+//
+// function total(inputTotal) {
+// 	var inputTotal = prompt(" what is the total of bill?");
+//
+// 	console.log(percent);
+// 	discount = percent / 100 / 100;
+// 	var afterDiscount = (discountt /100 * inputTotal);
+// // 	console.log( afterDiscount)
+// 	alert("Your lucky number is: " + luckyNumber + ", Price before discount is: "
+// 		+ inputTotal + ", Price after discount: " + inputTotal - afterDiscount );
+// }
+//
+// total(inputTotal);
+
+
+//random = luckyNUmber
+//beforeDiscount = total
+//afterDiscount = luckyNumber
+//
 
 // Generate a random number between 0 and 6
 

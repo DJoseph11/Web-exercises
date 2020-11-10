@@ -108,7 +108,34 @@ console.log(analyzeColorSwitch(userColor));
  *
  * Test your function by passing it various values and checking for the expected
  * return value.
- */
+**/
+var luckyNumber = Math.floor(Math.random() * 6);
+
+function calculateTotal(num, total) {
+	if (num === 0) {
+		alert("No Discount");
+
+		return num / 100 * total;
+	} else if (num === 1) {
+		alert("Your discout is " + (10 / 100 * 100) + "%");
+		return;
+	} else if (num === 2) {
+		alert("Your discout is " + (25 / 100 * 100) + "%");
+		return;
+	} else if (num === 3) {
+		alert("Your discout is " + (35 / 100 * 100) + "%");
+		return;
+	} else if (num === 4) {
+		alert("Your discout is " + (50 / 100 * 100) + "%");
+		return;
+	} else if (num === 5) {
+		alert("Your discout is " + (10 / 100 * 100) + "%");
+		return;
+	}
+}
+
+calculateTotal(luckyNumber, 100);
+
 
 /**
  * TODO:
@@ -117,8 +144,12 @@ console.log(analyzeColorSwitch(userColor));
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
+
+
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+
+
+var luckyNumber = Math.floor(Math.random() * 6);
 
 /**
  * TODO:

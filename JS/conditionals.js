@@ -237,6 +237,37 @@ var luckyNumber = Math.floor(Math.random() * 6);
  * HINT: The way we prompt for a value could be improved
  */
 
+// var checking = confirm("Would you like to enter a num?");
+// if (checking === true) {
+// 	var userInput = prompt("Enter number: ")
+// 	if (userInput % 2 === 0) {
+// 		alert(userInput + " is even")
+// 	} else  {
+// 		alert(userInput + " is odd")
+// 	}
+// alert("The number plus 100 is: " + (parseFloat(userInput) + 100));
+//
+// }
+
+// 	function isPositive ()
+//
+// var enterOrNot = confirm("Do you want to enter a number");
+//
+// if (enterOrNot) {
+// 	var userNumber = prompt("PLease type a number");
+// 	if (typeof  parseFloat(userNumber) === "number") {
+// 		if (isEven(userNumber) {
+//
+// 		})
+// 	} else {
+// 		alert("That is not a number");
+// 	}
+//
+// }
+//
+// function isEven(num)
+
+
 var checking = confirm("Would you like to enter a num?");
 if (checking === true) {
 	var userInput = prompt("Enter number: ")
@@ -245,6 +276,11 @@ if (checking === true) {
 	} else  {
 		alert(userInput + " is odd")
 	}
-alert("The number plus 100 is: " + (parseFloat(userInput) + 100));
+	if (userInput < 0) {
+		alert("Number negative");
+	} else {
+		alert("Number is Positive")
+	}
+	alert("The number plus 100 is: " + (parseFloat(userInput) + 100));
 
 }

@@ -6,11 +6,21 @@
 
 // verify that wer built a function called returnYellow
 
-if (typeof returnYellow !== "function") {
-	console.error("It's not a function");
-}
+// if (typeof returnYellow !== "function") {
+// 	console.error("It's not a function");
+// }
+//
+// if (returnYellow !== "Yellow") {
+// 	console.error("returnYellow does not return the string 'Yellow'");
+// 	console.error(returnYellow() + " returned instead");
+// }
 
-if (returnYellow !== "Yellow") {
-	console.error("returnYellow does not return the string 'Yellow'");
-	console.error(returnYellow() + " returned instead");
-}
+
+describe("Yellow", function () {
+	it("should be defined function", function () {
+		expect(typeof returnYellow).tobe("function");
+	});
+	it("should be defined function", function () {
+		expect(typeof returnYellow()).tobe("Yellow");
+	});
+});

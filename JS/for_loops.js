@@ -9,6 +9,14 @@
 
 
 
-// function showMultiplicationTable(num) {
-// 	console.log()
-// }
+function showMultiplicationTable(num) {
+	for (var i = 1; i <= 10; i++) {
+		var a = num
+		a *= i;
+		// console.log(num + " x " + i + " = " + a )
+		console.log(`${num} x ${i} = ${a}` )
+	}
+
+}
+
+document.write(showMultiplicationTable(8)) //should output 7 x 1 = 7

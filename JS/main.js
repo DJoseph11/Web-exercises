@@ -20,7 +20,7 @@ function withNoParams() {
 }
 
 function withParam(name) {
-    return alert("Hello ther " + name);
+    return alert("Hello there " + name);
 
 }
 
@@ -58,29 +58,31 @@ var honkHorn2 = function () {
 
 // function sayHello(name ="Darlhem") {
 //     alert("");
-// }
-//
-// //a function with no return value
-//
-// function shout(message) {
-//     alert(message.toUpperCase() + "!!!");
-//     return message;
-// }
-//
-// var returnValue = shout("Hello there");
-// console.log(returnValue);
-//
-
-//default function parameters
 
 
-// Scope is where a variable can be accessed
-var globalVar = "Global variable"
-function test() {
-    var test2 = "Local variable";
-    alert("look am local");
+/* An object is a grouping of data and functionality. Data items contained in an
+object are referred to as properties, and functions on an object are referred to as
+methods. */
 
-}
+//New Object Instance
 
+// to creates a custom object is can be declared bu using "new Object()"
 
+var beer = new Object();
+console.log(typeof beer); // object
+
+// Object literals notation "{ }"
+
+var beer = {}; // this is the same thing as above
+console.log(typeof beer); // object
+
+//properties can be assign to the object by using the "." dot notation or array notation.
+
+var beer = {};
+
+console.log(beer.brandName = "Dos Equis");
+
+console.log(beer["Distributor"] = "Stephen & Stephens");
+
+//Object properties are accessed in the same way they are set, either via dot notation or array notation.
 

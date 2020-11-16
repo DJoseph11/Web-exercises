@@ -18,3 +18,29 @@ do {
 } while (true);
 
 
+
+while (isNaN((userNum) || (userNum % 2 === 0) || (userNum < 1) || (userNum > 50))) {
+	var userNum = prompt("please enter an odd number")
+}  //instructor's way of doing the while loop
+
+
+console.log("Number to skip is:" + userNum);
+
+for (var i = 1; i < 50; i++) {
+	if (i === userNum) {
+		console.log("Yikes! skipping number: " + i);
+		continue;
+	} else if ( i % 2 === 0) {
+		continue;
+	} else {
+		console.log("Here is an off: " + i);
+	}
+
+}
+
+
+// Use a loop and the continue statement to output all the odd numbers between 1 and 50, except for the number
+// the user entered.
+
+
+

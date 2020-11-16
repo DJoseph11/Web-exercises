@@ -40,12 +40,12 @@ function showMultiplicationTable(num) {
 
 // document.write(showMultiplicationTable(8)) //should output 7 x 1 = 7
 
-var random = Math.floor((Math.random() * 200) + 20)
+// Use a for loop and the code from the previous lessons to generate 10 random numbers between 20 and 200
+// and output to the console whether each number is odd or even. For example:
 
-function rand(random) {
+function rand() {
 	for (var i = 1; i <= 10; i++) {
-		var a = random;
-		a *= i;
+		var random = Math.floor((Math.random() * 200) + 20);
 		if (random % 2 === 0) {
 			// console.log( random + " Your number is even.");
 			console.log(`Your number ${random} is even".`)
@@ -59,12 +59,30 @@ function rand(random) {
 
 }
 
-rand(random);
+rand();
+
+
+
+
+
+for( var outer = 1; outer <= 9; outer++) {
+	var output = "";
+	for(var inner = 1; inner <= outer; inner ++) {     /////instructor solution
+		output = output + outer
+	}
+	console.log(output);
+}
+
+
+
+// Create a for loop that uses console.log to create the output from 100 down to 5 in an increment of 5
 
 
 for (var i = 100; i >= 5; i -= 5) {
 	console.log(i);
 }
+
+
 
 
 

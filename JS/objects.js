@@ -53,11 +53,38 @@
 	 * and console.log the relevant messages for each person
 	 */
 
-	// var shoppers = [
-	//     {name: 'Cameron', amount: 180},
-	//     {name: 'Ryan', amount: 250},
-	//     {name: 'George', amount: 320}
-	// ];
+	var shoppers = [
+	    {name: 'Cameron', amount: 180},
+	    {name: 'Ryan', amount: 250},
+	    {name: 'George', amount: 320}
+	];
+
+	var a = shoppers[0];
+	var b = shoppers[1];
+	var c = shoppers[2];
+
+
+	function d () {
+		if (a.amount > 200) {
+			var amount = (.12 * a.amount);
+			amount = a.amount - amount;
+			return
+			console.log(a.name);
+			console.log(amount);
+		}
+		if (b.amount > 200) {
+			var amount = (.12 * b.amount);
+			amount = a.amount - amount;
+			console.log(b.name);
+			console.log(amount);
+		}
+		if (c.amount > 200) {
+			var amount = (.12 * c.amount);
+			amount = a.amount - amount;
+			console.log(c.name);
+			console.log(amount);
+		}
+	}
 
 	/** TODO:
 	 * Create an array of objects that represent books and store it in a

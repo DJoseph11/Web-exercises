@@ -26,9 +26,6 @@
 	var planetArrayToString;
 	planetArrayToString = planetsArray.join("<br>");
 	console.log(planetArrayToString);
-	// document.writeln(planetArrayToString);
-	console.log("-----")
-	// var planetArrayUnorderedList = planetsArray.join("<li></li>");
 	document.writeln("<li>" + planetsArray.join("</li><li>") + "</li>");
 
 

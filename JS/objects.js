@@ -170,14 +170,14 @@
 	 */
 
 
-	for (let i = 0; i < books.length; i++) {
-		console.log("Book # " + [i]);
-		console.log("Title: " + books[i].title);
-		console.log("Author: " + books[i].author.firstName + " " + books[i].author.lastName);
-		console.log("--- ");
-
-
-	}
+	// for (let i = 0; i < books.length; i++) {
+	// 	console.log("Book # " + [i]);
+	// 	console.log("Title: " + books[i].title);
+	// 	console.log("Author: " + books[i].author.firstName + " " + books[i].author.lastName);
+	// 	console.log("--- ");
+	//
+	//
+	// }
 
 
 	/**
@@ -190,9 +190,38 @@
 	 *   outputs the information described above. Refactor your loop to use your
 	 *   `showBookInfo` function.
 	 */
-	function createBook(title, author) {
+	// accept input of title as parameter 1
 
+
+
+// accept input of author as parameter 2
+
+
+
+// return book object
+
+
+// create function with book array
+
+
+// creat function name showBookInfo
+
+
+// input book object for parameter
+
+
+// output book title, author, and book number
+
+	function createBook(title, author) {
+		var title =
+		for (var i = 0; i < books.length; i++) {
+			console.log("Book # " + [i]);
+			console.log("Title: " + books[i].title);
+			console.log("Author: " + books[i].author.firstName + " " + books[i].author.lastName);
+			console.log("--- ");}
 	}
+
+	console.log(createBook());
 
 
 })();

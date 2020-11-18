@@ -213,7 +213,6 @@
 // output book title, author, and book number
 
 	function createBook(title, author) {
-		var title =
 		for (var i = 0; i < books.length; i++) {
 			console.log("Book # " + [i]);
 			console.log("Title: " + books[i].title);

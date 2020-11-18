@@ -65,10 +65,10 @@ rand();
 
 
 
-for( var outer = 1; outer <= 9; outer++) {
+for( var i = 1; i <= 9; i++) {
 	var output = "";
-	for(var inner = 1; inner <= outer; inner ++) {     /////instructor solution
-		output = output + outer
+	for(var inner = 1; inner <= i; inner ++) {     /////instructor solution
+		output = output + i;
 	}
 	console.log(output);
 }
@@ -82,7 +82,20 @@ for (var i = 100; i >= 5; i -= 5) {
 	console.log(i);
 }
 
+for ( var counter = 1; counter < 5; counter++) {
+	console.log('Inside the loop:' + counter);
+}
+console.log('Outside the loop:' + counter);
 
+// Inside the loop:1
+// Inside the loop:2
+// Inside the loop:3
+// Inside the loop:4
+// Inside the loop:5
+
+// using the var keyword in the initialize makes counter available in the global scope
+// while using the let keyword makes counter Inaccessible outside its local scope
+// this will throw a Uncaught reference error: counter is not defined
 
 
 

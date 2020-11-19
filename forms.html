@@ -3,75 +3,181 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Register With US</title>
+	<link href="https://fonts.googleapis.com/css?family=Muli|Oxygen" rel="stylesheet">
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		a {
+			text-decoration: none;
+		}
+		.about {
+			text-align: center;
+			font-size: 12px;
+			padding-top: 10px;
+		}
+		body {
+			font-family: 'Oxygen', sans-serif;
+			background:	#00000;
+			line-height: 1.8;
+		}
+		.btn {
+			background: #a8e6cf;
+		}
+		.btn:hover {
+			background:#97cfba;
+		}
+		#container {
+			margin: 15px auto;
+			max-width: 480px;
+			padding: 0 35px 35px ;
+			
+		}
+		
+		footer {
+			text-align: center;
+			font-size: 13px;
+			margin-top: 10px;
+			color: 000000;
+		}
+		.title {
+			letter-spacing: 1.5px;
+			text-align: center;
+			margin: 0 auto;
+			max-width: 500px;
+			padding-bottom: 10px;
+			color: #fffff;
+		}
+		.wrap {
+			background: #7EC8E3;
+			padding: 10px 25px;
+			color: black;
+			box-shadow: 1px 2px #0000FF
+		
+		;
+		}
+		.wrap p {
+			text-align: center;
+			font-size: 12px;
+			padding-top: 10px;
+		}
+		.wrap .group {
+			margin-top: 10px;
+		}
+		.wrap .group input {
+			width: 100%;
+			padding: 10px;
+			border: #ddd 1px solid;
+			border-radius: 5px;
+		}
+		.wrap .group label p {
+			display: block;
+			font-size: 13px;
+		}
+		.wrap .group textarea {
+			width: 100%;
+			padding: 10px;
+			border: #ddd 1px solid;
+			border-radius: 5px;
+		.wrap button {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			margin: 10px 0 15px 0;
+			color: #fff00;
+			cursor: pointer;
+			font-size: 1.1em;
+		}
+		
+	</style>
 </head>
 <body>
-<h1>Sign up form</h1>
-<form method="POST" action="https://request-inspector.glitch.me/">
-	<label for="email">Email Address:</label>
-	<br>
-	<input type="text" id="email" name="email" placeholder="Please enter your email.">
+<div class="title">
+	<h1>Sign up form</h1>
+</div>
+<div id="container">
+	<div class="wrap">
+		<form method="POST" action="https://request-inspector.glitch.me/">
+			<div class="group">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" placeholder="Your email goes here">
+			
+			</div>
+			
+			<div class="group">
+				<label for="password">Password(6 or more characters)</label>
+				<input type="password" name="password" id="password" placeholder="Password goes here">
+			
+			</div>
+			<div class="group">
+				<label for="bio">Bio:</label>
+				<textarea id="idBio" name="bio">Your bio goes here.</textarea>
+			</div>
+			
+			
+			<br>
+			<label class="group" for="about">How did you hear about us?</label>
+			<br>
+			
+			<br>
+			
+			<lable for="billboard">Billboard</lable>
+			<input type="radio" name="add1">
+			<br>
+			
+			<lable for="radio advertisement">Radio advertisement</lable>
+			<input type="radio" name="add2">
+			
+			<br>
+			
+			<lable for="Internet advertisement">Internet advertisement</lable>
+			<input type="radio" name="add1">
+			
 	
-	<br>
+			<lable for="Other">Other</lable>
+			<input type="radio" name="add2">
+			
+			<br>
+			<lable for="Browser">What browser do you use?</lable>
+			<select name="about" class="group">
+				<option value="firefox">Firefox</option>
+				<option value="Chrome">Chrome</option>
+				<option value="Safari">Safari</option>
+				<option value="InterEx">Internet Explorer</option>
+			</select>
+			
+			<br>
+			
+			
+			<p class="AgreeText">
+				By clicking Join now, you agree to Darlhem's
+				<a href="#">User Agreement,</a>
+				<a href="#">Privacy Policy</a>
+				and
+				<a href="#">Cookie Policy</a>
+			</p>
+			<button type="submit" class="btn">Submit</button>
+			<br>
+		
+		</form>
 	
-	<label for="password">Password:</label>
-	<br>
-	<input type="text" id="password" name="password" placeholder="Please enter password">
-	
-	<br>
-	
-	<label for="bio">Bio:</label>
-	<br>
-	<textarea id="bio" name="bio">Your bio goes here.</textarea>
-	
-	<br>
-	<label for="about">How did you hear about us?</label>
-	<br>
-	
-	<br>
-	
-	<lable for="billboard" >Billboard</lable>
-	<br>
-	<input type="radio" name="add1">
-	<br>
-	
-	<lable for="radio advertisement" >Radio advertisement</lable>
-	<br>
-	<input type="radio" name="add2">
-	
-	<br>
-	
-	<lable for="Internet advertisement" >Internet advertisement</lable>
-	<br>
-	<input type="radio" name="add1">
-	
-	<br>
-	
-	<lable for="Other" >Other</lable>
-	<br>
-	<input type="radio" name="add2">
-	
-	<br>
-	
-	<select name="about" id="about">
-		<option value="firefox">Firefox</option>
-		<option value="Chrome">Chrome</option>
-		<option value="Safari">Safari</option>
-		<option value="InterEx">Internet Explorer</option>
-	</select>
-	
-	<br>
-	
-	<button type="submit">Submit</button>
-	
-	<p>
-		By clicking the Submit button, you agree to our
-		<a href="#">Terms & Conditions</a> and
-		<a href="#">Privacy Policy</a>
-	</p>
-	<br>
+	</div>
 
-</form>
+
+</div>
+
+<footer>
+	Darlhems's Corp&copy; <i class="copyright" aria-hidden="true"></i>
+</footer>
+
+
 </body>
 </html>
+
+
+
 
 

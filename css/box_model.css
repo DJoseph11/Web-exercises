@@ -1,0 +1,19 @@
+
+body {
+    background-color: aqua;
+}
+
+#outer-box {
+    background-color: #dddddd;
+
+    padding: 15px;
+}
+
+#inner-box {
+    h
+    padding: 30px;
+    margin: 0;
+    background-color: indianred;
+}
+
+

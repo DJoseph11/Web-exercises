@@ -36,7 +36,19 @@ h1,h2,h3 {
 h6 {
     font-size: 14px;
     margin-bottom: 2rem;
-    top: 50px;
+    margin-top: 14px;
+}
+.bottom-content {
+
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+    text-align: center;
 }
 
 .list {
@@ -49,12 +61,23 @@ h6 {
     border-bottom: #333 dotted 2px;
 }
 
+.mid-list {
+   ;
+}
+
 #mid-section {
     color: #fff;
     /*background-color:#465362 ;*/
     background: url("../img/welcome.png") no-repeat center center/cover ;
     height: 100vh;
+
 }
+
+#bottom {
+    background: #333;
+    text-align: center;
+}
+
 
 .vision {
 
@@ -66,3 +89,7 @@ h6 {
 .content_1>ul>li {
     list-style: none;
 }
+
+.footer {
+
+ }

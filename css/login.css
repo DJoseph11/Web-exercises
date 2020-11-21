@@ -66,6 +66,8 @@ fieldset {
     /* The border of this element should be 1px, and its color should be light grey */
     border: 1px solid lightgrey;
     background-color: #0fb784;
+    margin-top: 10px;
+    padding: 8px;
 }
 
 .form-control {

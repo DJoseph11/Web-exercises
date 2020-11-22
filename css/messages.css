@@ -7,7 +7,7 @@ body, html {
 }
 
 p {
-    font-size: 15px:
+    font-size: 15px;
 }
 
 .content_1 {
@@ -36,8 +36,8 @@ p {
     /*     border: 1px solid lightgray */
     border-radius: 8px ;
     /*     font-weight: bold; */
-    font-style: bold;
-    font-size: 40px:
-
-
+    font-size: 40px;
 }
+
+
+

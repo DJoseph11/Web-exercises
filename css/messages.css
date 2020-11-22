@@ -6,14 +6,38 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 
-#container {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+p {
+    font-size: 15px:
 }
 
-#container>.content {
-    margin: 20px;
+.content_1 {
+    background-color: #CDDDFF;
+    color: #423C9B;
+}
+
+.content_2 {
+    background-color: #CFF3DB;
+    color: #68A780;
+}
+
+.content_3 {
+    background-color: #FDFBC9;
+    color: #8F7B20;
+}
+
+.content_4 {
+    background-color: #FAD2D6;
+    color: #AA5666;
+}
+
+#container>.content_1, .content_2, .content_3, .content_4{
+    margin: 15px;
+    padding: 1px 8px;
+    /*     border: 1px solid lightgray */
+    border-radius: 8px ;
+    /*     font-weight: bold; */
+    font-style: bold;
+    font-size: 40px:
+
+
 }

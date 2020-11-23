@@ -21,17 +21,26 @@ header {
     background-size: cover;
     min-height: 300px;
     padding-top: 275px;
+
 }
 a {
     color: var(--link-color);
 }
 .top-nav {
     background: var(--light-bg);
+    width: 100%;
+
 }
 .nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
+
+}
+
+.nav .nav-item {
+    display: inline-block;
+    padding: 1.5em;
 }
 .nav-link {
     color: var(--main-link-color);
@@ -42,7 +51,19 @@ a {
     color: var(--link-color);
 }
 .profile {
+    height: 80px;
+    /*position: absolute;*/
     background: var(--light-bg);
+}
+
+.profile-image {
+    top: 300px;
+    position: absolute;
+
+}
+
+.profile-form {
+padding: 16px;
 }
 .btn {
     border: 1px solid var(--main-link-color);
@@ -51,6 +72,7 @@ a {
     font-weight: bold;
     padding: 8px;
     border-radius: 5px;
+
 }
 .btn-large {
     font-size: 1.3em;

@@ -32,15 +32,15 @@ div.main {
     flex-wrap: wrap;
 }
 div.single-box {
-    display: inherit; inherits the display property of the parent class
+    display: inherit; /*inherits the display property of the parent class*/
     width: 200px;
     height: 200px;
-    /* justtify content*/
+    /* justtify-content */
     /* TODO: Center text horizontally (main axis) */
     /*justify-content  justify = main axis*/
     /*justify-items justify = main axis*/
     /*align-content align =cross axis*/
-    justify-content: center;
+    /*justify-content: center;*/
     /* TODO: Center text vertically  (cross axis) */
     align-items:center ;
     font-size: 2em;

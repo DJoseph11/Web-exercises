@@ -21,26 +21,24 @@ header {
     background-size: cover;
     min-height: 300px;
     padding-top: 275px;
-
 }
 a {
     color: var(--link-color);
 }
 .top-nav {
     background: var(--light-bg);
+    position: fixed;
     width: 100%;
-
+    z-index: 1000;
+}
+.nav-item {
+    display: inline-block;
+    padding: 1.5em;
 }
 .nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
-
-}
-
-.nav .nav-item {
-    display: inline-block;
-    padding: 1.5em;
 }
 .nav-link {
     color: var(--main-link-color);
@@ -51,19 +49,39 @@ a {
     color: var(--link-color);
 }
 .profile {
-    height: 80px;
-    /*position: absolute;*/
     background: var(--light-bg);
+    height: 80px;
+    position: relative;
+    /*the --position-- property sets how an element is positioned in a document
+    and the --top, right, bottom, left-- determine the final location of the positioned element
+
+    */
 }
 
-.profile-image {
-    top: 300px;
+.profile-form{
+    float: right;
+    line-height: 80px;
+}
+.profile-image{
     position: absolute;
 
+    top: -25px;
+    /*The element is removed from the normal document flow, and no space is created for the
+    element in the page layout. It is positioned relative to its closest positioned ancestor,
+     if any; otherwise, it is placed relative to the initial containing block. Its final
+      position is determined by the values of top, right, bottom, and left.*/
 }
+.profile-details {
 
-.profile-form {
-padding: 16px;
+}
+.timeline {
+
+}
+.who-to-follow {
+
+}
+.container {
+    margin-top: 2em;
 }
 .btn {
     border: 1px solid var(--main-link-color);
@@ -72,7 +90,6 @@ padding: 16px;
     font-weight: bold;
     padding: 8px;
     border-radius: 5px;
-
 }
 .btn-large {
     font-size: 1.3em;

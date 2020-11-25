@@ -18,6 +18,10 @@ h2, h3 {
     margin: 0 auto;
     width: 80%;
 }
+.box-container-1 {
+
+}
+
 
 .green-box {
     background: green;
@@ -34,10 +38,13 @@ h2, h3 {
     padding: 1em;
     margin: 0 auto;
     /* enter needed declarations here */
+    display: flex;
+    flex-direction: column;
 }
 
 section {
     /* enter needed declarations here */
+    display: inherit;
 }
 
 section:nth-of-type(1) {

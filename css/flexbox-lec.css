@@ -25,14 +25,14 @@ div.main {
     /* This is where I'll declare the display: flex for all the inner boxes */
     /* TODO: Set up display to be flex */
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     width: 100%;
     /* TODO: Set up flex wrapping */
     margin-bottom: 30px;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 div.single-box {
-    display: inherit; /*inherits the display property of the parent class*/
+    /*display: inherit; !*inherits the display property of the parent class*!*/
     width: 200px;
     height: 200px;
     /* justtify-content */
@@ -42,10 +42,10 @@ div.single-box {
     /*align-content align =cross axis*/
     /*justify-content: center;*/
     /* TODO: Center text vertically  (cross axis) */
-    align-items:center ;
+    /*align-items:center ;*/
     font-size: 2em;
     margin-bottom: 10px;     /*  Little space beneath each of the boxes */
-    flex-direction: row;
+    /*flex-direction: row;*/
     cursor: pointer;         /*  Make it pretty when we mouseover       */
 
 }

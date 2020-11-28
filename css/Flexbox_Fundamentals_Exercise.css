@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: lightskyblue;
-    /*font-family: Chalkboard, sans-serif;*/
+    font-family: Chalkboard, sans-serif;
 }
 
 h1 {text-align: center;}
@@ -41,7 +41,7 @@ h2, h3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /*align-items: center;*/
+    justify-content: space-between;
 
 
 }
@@ -50,6 +50,8 @@ section {
     display: inherit;
     flex-flow: wrap;
     /* enter needed declarations here */
+    flex-direction: row;
+    align-items: center;
 
 
 }
@@ -59,17 +61,25 @@ section:nth-of-type(1) {
     height: 3em;
     background: lightgreen;
     /* enter needed declarations here */
+    /*justify-content: flex-end;*/
+
+
+
 
 
 }
 section:nth-of-type(1) div:last-child {
     /* enter needed declarations here */
+    display: flex;
 }
 
 .purple-box {
     background: fuchsia;
     width: 3em;
     height: 1em;
+    display: inherit;
+    /*justify-content: stretch;*/
+
 }
 
 .purple-box:nth-of-type(1) {
@@ -88,10 +98,14 @@ section:nth-of-type(1) div:last-child {
 
 section:nth-of-type(3) {
     /* enter needed declarations here */
+    display: inherit;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 section:nth-of-type(3) h3 {
     /* enter needed declarations here */
+
 
 }
 
@@ -101,6 +115,7 @@ section:nth-of-type(3) h3 {
     height: 2em;
     border-radius: 1em;
     margin: .5em;
+
 }
 
 .large-brown-box {
@@ -116,6 +131,9 @@ section:nth-of-type(3) h3 {
 
 section:nth-of-type(5) {
     /* enter needed declarations here */
+    display: inherit;
+    justify-content: space-evenly;
+
 }
 
 .yellow-box {
@@ -128,6 +146,8 @@ section:nth-of-type(6) {
     background: coral;
     height: 14em;
     /* enter needed declarations here */
+    display: inherit;
+    justify-content: space-between;
 }
 
 .grey-box {

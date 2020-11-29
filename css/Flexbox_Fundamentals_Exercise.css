@@ -21,9 +21,13 @@ h2, h3 {
 
 
 .green-box {
+    display: flex;
     background: green;
     height: 1em;
     width: 2em;
+    flex-grow: 1;
+
+
 }
 
 .border {border: 2px solid black;}
@@ -38,39 +42,28 @@ h2, h3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: stretch;
-
-
+    justify-content: space-around;
 }
 
 section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     /* enter needed declarations here */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-end;
 }
 
 section:nth-of-type(1) {
-    display: flex;
     height: 3em;
     background: lightgreen;
-    flex-wrap: wrap;
-    /*     align-items: flex-start; */
-    /*     justify-content: space-between; */
-    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
 
 
 }
+
 section:nth-of-type(1) div:last-child {
     display: flex;
-    /*     flex-wrap: wrap; */
-    /*     justify-content:stretch ; */
-    /*         justify-content:space-between ; */
-    /* enter needed declarations here */
-    /*     flex-direction: column; */
-    /*     align-items: center; */
-
+    flex-grow: 1;
 
 }
 
@@ -78,10 +71,6 @@ section:nth-of-type(1) div:last-child {
     background: fuchsia;
     width: 3em;
     height: 1em;
-
-
-
-
 }
 
 .purple-box:nth-of-type(1) {
@@ -128,11 +117,9 @@ section:nth-of-type(3) h3 {
     height: 5em;
     width: 5em;
     background: brown;
+    /* enter needed declarations here */
     display: flex;
     flex-grow: 1;
-    /* enter needed declarations here */
-
-
 }
 
 .large-brown-box:nth-of-type(2) {
@@ -140,10 +127,9 @@ section:nth-of-type(3) h3 {
 }
 
 section:nth-of-type(5) {
+    /*  enter needed declarations here */
     display: flex;
     justify-content: space-evenly;
-    /* enter needed declarations here */
-
 
 }
 
@@ -154,12 +140,13 @@ section:nth-of-type(5) {
 }
 
 section:nth-of-type(6) {
-    display: flex;
     background: coral;
     height: 14em;
-    flex-wrap: wrap;
-    /*     align-items: center; */
-    /* enter needed declarations here */
+    /*  enter needed declarations here */
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+
 
 }
 

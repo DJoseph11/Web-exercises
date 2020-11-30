@@ -1,0 +1,6 @@
+* {box-sizing: border-box;}
+.nav-links {
+    list-style-type: none;
+    display: inline-block;
+    text-decoration: none;
+}

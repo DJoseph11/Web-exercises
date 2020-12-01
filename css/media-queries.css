@@ -6,8 +6,20 @@
 }
 
 a {
+    /*color: white;*/
+    font-weight: 300;
+    letter-spacing: 2px;
     text-decoration: none;
+    /*background: rgb(238, 13, 13);*/
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #CCCCCC;
+
 }
+
+
 
 body div {
 
@@ -15,7 +27,7 @@ body div {
 
 nav {
     padding: 0 15px;
-    background: #CCCCCC;
+
 
 }
 
@@ -26,19 +38,25 @@ li a {
 
 .nav-links {     /*main menu*/
     list-style-type: none;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 10px;
-    ;
+    /*padding: 20px;*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+    /*margin: 10px;*/
+    /*;*/
 }
 
 .nav-links ul li a {    /*items for the nav*/
 
 }
 
-@media all {
+@media screen and (min-width: 1500px) {
+    body {
+        background-color: white;;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1500px) {
 
 }
 

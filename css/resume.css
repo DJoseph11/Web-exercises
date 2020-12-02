@@ -1,3 +1,7 @@
-.desc_text {
 
+h1 h2 {
+    font-weight: bold;
+}
+.desc_text {
+text-align: center;
 }

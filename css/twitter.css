@@ -15,6 +15,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, Ubuntu, sans-serif;
+
 }
 header {
     background-image: url("https://picsum.photos/1200/300");
@@ -25,17 +26,42 @@ header {
 a {
     color: var(--link-color);
 }
+
+.container {
+margin-top: 2em;
+}
+
 .top-nav {
     background: var(--light-bg);
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
+
+.media {
+    background: var(--light-bg);
+    width: 100%;
+    border-bottom: 1px solid var(--separator-color);
+    padding: .5em;
+    overflow: auto;
+}
+
+.media-image {
+    max-width: 50px;
+    float: left;
+    margin-top: 1.33em;
+}
+.media-body {
+    float: left;
+    width: calc(100% - 50px);
+}
 .nav-item {
     display: inline-block;
     padding: 1.5em;
 }
+
 .nav {
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -51,37 +77,44 @@ a {
     background: var(--light-bg);
     height: 80px;
     position: relative;
-    /*the --position-- property sets how an element is positioned in a document
-    and the --top, right, bottom, left-- determine the final location of the positioned element
+}
+.profile-items {
+   list-style-type: none;
 
-    */
 }
 
-.profile-form{
-    float: right;
-    line-height: 80px;
+.profile-entry {
+    margin: .5em;
 }
-.profile-image{
+
+.profile-header {
+    position: absolute;
+}
+.profile-image {
+    margin-top: -40px;
     position: absolute;
 
-    top: -25px;
-    /*The element is removed from the normal document flow, and no space is created for the
-    element in the page layout. It is positioned relative to its closest positioned ancestor,
-     if any; otherwise, it is placed relative to the initial containing block. Its final
-      position is determined by the values of top, right, bottom, and left.*/
+}
+.profile-form {
+    float:right;
+    line-height: 80px;
 }
 .profile-details {
-
+    float: left;
+    margin: 0 .5em;
+    width: calc(25% - 1em)
 }
 .timeline {
-
+    float: left;
+    margin: 0 .5em;
+    width: calc(50% - 1em)
 }
 .who-to-follow {
+    float: left;
+    margin: 0 .5em;
+    width: calc(25% - 1em)
+}
 
-}
-.container {
-    margin-top: 2em;
-}
 .btn {
     border: 1px solid var(--main-link-color);
     color: var(--main-link-color);

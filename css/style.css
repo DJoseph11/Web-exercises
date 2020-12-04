@@ -28,15 +28,25 @@ main {
 
 }
 
-h1,h2,h3 {
+h1,h2 {
     color:#e8f1f2;
     text-decoration: underline;
 }
 
+h3 {
+    color: purple;
+    font-size: 50px;
+}
 h6 {
     font-size: 14px;
     margin-bottom: 2rem;
     margin-top: 14px;
+}
+table {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 390px;
+    color: green;
 }
 .bottom-content {
 
@@ -59,14 +69,23 @@ h6 {
 .list>li {
     padding: 1rem 0;
     border-bottom: #333 dotted 2px;
+    font-size: 30px;
+
 }
 
-.mid-list {
-   ;
+
+
+.purp {
+    color: purple;
+    font-size: 50px;
+}
+
+.prices {
+    text-align: center;
 }
 
 #mid-section {
-    color: #fff;
+    color: black;
     /*background-color:#465362 ;*/
     background: url("../img/welcome.png") no-repeat center center/cover ;
     height: 100vh;
@@ -75,7 +94,7 @@ h6 {
 
 #bottom {
     background: #333;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 

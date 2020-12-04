@@ -28,4 +28,4 @@ do {
 
 console.log("Yeah, i sold all of my ice cream");
 // This expression will generate a random number between 1 and 5
-
+// instructor solution above.

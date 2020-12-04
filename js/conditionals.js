@@ -21,22 +21,22 @@ console.log("test");
  */
 
 
-// function analyzeColor(input) {
-//
-// 	if (input === "blue") {
-// 		return "blue is the color of the sky";
-// 	} else {
-// 		if (input === "red") {
-// 			return "Strawberries are red";
-//
-// 		} else if (input === "cyan") {
-// 			return "I don't know anything about cyan";
-// 		} else {
-// 			return "I dont recognize this color" + input;
-// 		}
-// 	}
-//
-// }
+function analyzeColor(input) {
+
+	if (input === "blue") {
+		return "blue is the color of the sky";
+	} else {
+		if (input === "red") {
+			return "Strawberries are red";
+
+		} else if (input === "cyan") {
+			return "I don't know anything about cyan";
+		} else {
+			return "I dont recognize this color" + input;
+		}
+	}
+
+}
 
 console.log(analyzeColor("blue"))
 
@@ -110,28 +110,28 @@ console.log(analyzeColorSwitch(userColor));
 **/
 var luckyNumber = Math.floor(Math.random() * 6);
 
-// function calculateTotal(num, total) {
-// 	if (num === 0) {
-// 		alert("No Discount");
-//
-// 		return num / 100 * total;
-// 	} else if (num === 1) {
-// 		alert("Your discout is " + (10 / 100 * total) + "%");
-// 		return;
-// 	} else if (num === 2) {
-// 		alert("Your discout is " + (25 / 100 * total) + "%");
-// 		return;
-// 	} else if (num === 3) {
-// 		alert("Your discout is " + (35 / 100 * total) + "%");
-// 		return;
-// 	} else if (num === 4) {
-// 		alert("Your discout is " + (50 / 100 * total) + "%");
-// 		return;
-// 	} else if (num === 5) {
-// 		alert("Your discout is " + (10 / 100 * total) + "%");
-// 		return;
-// 	}
-// }
+function calculateTotal(num, total) {
+	if (num === 0) {
+		alert("No Discount");
+
+		return num / 100 * total;
+	} else if (num === 1) {
+		alert("Your discout is " + (10 / 100 * total) + "%");
+		return;
+	} else if (num === 2) {
+		alert("Your discout is " + (25 / 100 * total) + "%");
+		return;
+	} else if (num === 3) {
+		alert("Your discout is " + (35 / 100 * total) + "%");
+		return;
+	} else if (num === 4) {
+		alert("Your discout is " + (50 / 100 * total) + "%");
+		return;
+	} else if (num === 5) {
+		alert("Your discout is " + (10 / 100 * total) + "%");
+		return;
+	}
+}
 
 calculateTotal(luckyNumber, 100);
 
@@ -236,36 +236,20 @@ var luckyNumber = Math.floor(Math.random() * 6);
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-
-// var checking = confirm("Would you like to enter a num?");
-// if (checking === true) {
-// 	var userInput = prompt("Enter number: ")
-// 	if (userInput % 2 === 0) {
-// 		alert(userInput + " is even")
-// 	} else  {
-// 		alert(userInput + " is odd")
-// 	}
-// alert("The number plus 100 is: " + (parseFloat(userInput) + 100));
-//
-// }
-
-// 	function isPositive ()
-//
-// var enterOrNot = confirm("Do you want to enter a number");
-//
-// if (enterOrNot) {
-// 	var userNumber = prompt("PLease type a number");
-// 	if (typeof  parseFloat(userNumber) === "number") {
-// 		if (isEven(userNumber) {
-//
-// 		})
-// 	} else {
-// 		alert("That is not a number");
-// 	}
-//
-// }
-//
 // function isEven(num)
+
+var checking = confirm("Would you like to enter a num?");
+if (checking === true) {
+	var userInput = prompt("Enter number: ")
+	if (userInput % 2 === 0) {
+		alert(userInput + " is even")
+	} else  {
+		alert(userInput + " is odd")
+	}
+alert("The number plus 100 is: " + (parseFloat(userInput) + 100));
+
+
+
 
 
 var checking = confirm("Would you like to enter a num?");

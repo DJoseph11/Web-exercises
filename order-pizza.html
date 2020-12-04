@@ -46,7 +46,7 @@
 </nav>
 <section >
 	<div class="container-fluid">
-		<div class="jumbotron">
+		<div class="jumbotron d-none d-md-block">
 			<h1 class="display-4 center-h1">Welcome to pizza World</h1>
 			<!--		<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to-->
 			<!--			featured content or information.</p>-->
@@ -60,100 +60,154 @@
 
 <section>
 	<div class=" container-fluid card">
-		<h2>Build your own pizza</h2>
-		<ul class="nav nav-tabs">
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
 			<li class="nav-item">
-				<a class="nav-link active" href="#size_crust"><span class="badge badge-pill badge-dark ">1</span>Sizes and
-					crust</a>
+				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#sizeCrust" role="tab" aria-controls="size_crust" aria-selected="true"><span class="badge badge-pill badge-dark ">1</span>Sizes and crust</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#"><span class="badge badge-pill badge-dark ">2</span>Cheese and Sauce</a>
+				<a class="nav-link" id="profile-tab" data-toggle="tab" href="#cheese_sauce" role="tab" aria-controls="cheese_sauce" aria-selected="false"><span class="badge badge-pill badge-dark ">2</span>Cheese and Sauce</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#"><span class="badge badge-pill badge-dark ">3</span>Toppings</a>
+				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#toppings" role="tab" aria-controls="toppings" aria-selected="false"><span class="badge badge-pill badge-dark ">3</span>Toppings</a>
 			</li>
 		</ul>
+		
+		<!--Inside the card tabs-->
+		
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="sizeCrust" role="tabpanel" aria-labelledby="home-tab">
+				<div class=" container-fluid">
+					<div id="size_crust" class="card-header bg-primary text-white">
+						Choose size and crust
+					</div>
+					<div class="card-body">
+						<div class="list-group">
+							<p class="list-group-item  list-group-item text-dark bg-light ">
+								Hand Tossed
+							</p>
+							
+							<p  class="list-group-item list-group-item">Garlic seasoned crust with a rich, buttery taste.</p>
+							<a href="#" class="list-group-item list-group-item-action">Small(10")</a>
+							<a href="#" class="list-group-item list-group-item-action">Medium(12")</a>
+						</div>
+						
+						<div class="pt-5"></div>
+						<!--		<ul class="list-group list-group-flush">-->
+						<!--			<li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>-->
+						<!--			<li class="list-group-item">Small(10")</li>-->
+						<!--			<li class="list-group-item">Medium(12")</li>-->
+						<!--		</ul>-->
+						<div class="list-group">
+							<p class="list-group-item  list-group-item text-dark bg-light">
+								Crispy Thin
+							</p>
+							
+							<p class="list-group-item list-group-item">Thin enough for optimum crispy to crunchy ratio.</p>
+							<a href="#" class="list-group-item list-group-item-action">Medium(12")</a>
+							<a href="#" class="list-group-item list-group-item-action" >Large(14")</a>
+						</div>
+					</div>
+					<div class="card-footer text-right">
+						<a href="#cheese_sauce" class="btn btn-primary text-right">Next Step ></a>
+					</div>
+				</div>
+			</div>
+<!--			2-->
+			<div class="tab-pane fade" id="cheese_sauce" role="tabpanel" aria-labelledby="profile-tab">
+				<div class=" container-fluid">
+					<div id="cheese_op" class="card-header bg-primary text-white">
+						Choose cheese and sauce
+					</div>
+					<div class="card-body">
+						<div class="list-group">
+							<p class="list-group-item  list-group-item text-dark bg-light ">
+								Cheese
+							</p>
+							
+							<p  class="list-group-item list-group-item">Garlic seasoned crust with a rich, buttery taste.</p>
+							<a href="#" class="list-group-item list-group-item-action">Small(10")</a>
+							<a href="#" class="list-group-item list-group-item-action">Medium(12")</a>
+						</div>
+						
+						<div class="pt-5"></div>
+						<!--		<ul class="list-group list-group-flush">-->
+						<!--			<li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>-->
+						<!--			<li class="list-group-item">Small(10")</li>-->
+						<!--			<li class="list-group-item">Medium(12")</li>-->
+						<!--		</ul>-->
+						<div class="list-group">
+							<p class="list-group-item  list-group-item text-dark bg-light">
+								Sauce
+							</p>
+							
+							<p class="list-group-item list-group-item">Thin enough for optimum crispy to crunchy ratio.</p>
+							<a href="#" class="list-group-item list-group-item-action">Medium(12")</a>
+							<a href="#" class="list-group-item list-group-item-action" >Large(14")</a>
+						</div>
+					</div>
+					<div class="card-footer text-right">
+						<a href="#" class="btn btn-primary text-right">< Back</a>
+						<a href="#" class="btn btn-primary text-right">Next Step ></a>
+					</div>
+				</div>
+			</div>
+			
+<!--			3-->
+			<div class="tab-pane fade" id="toppings" role="tabpanel" aria-labelledby="contact-tab">
+				<div class=" container-fluid">
+					<div id="cheese_op" class="card-header bg-primary text-white">
+						Choose toppings
+					</div>
+					<div class="card-body">
+						<div class="list-group">
+							<p class="list-group-item  list-group-item text-dark bg-light ">
+								Choose Meats
+							</p>
+							
+							<a  href="#" class="list-group-item list-group-item-action">Beef</a>
+							<a href="#" class="list-group-item list-group-item-action">Ham</a>
+							<a href="#" class="list-group-item list-group-item-action">Philly Steak</a>
+							<a href="#" class="list-group-item list-group-item-action">Bacon</a>
+						</div>
+						
+						<div class="pt-5"></div>
+						<!--		<ul class="list-group list-group-flush">-->
+						<!--			<li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>-->
+						<!--			<li class="list-group-item">Small(10")</li>-->
+						<!--			<li class="list-group-item">Medium(12")</li>-->
+						<!--		</ul>-->
+						<div class="list-group">
+							<p class="list-group-item  list-group-item text-dark bg-light">
+								Choose Non-Meats
+							</p>
+							
+							<a href="$" class="list-group-item list-group-item-action">Green Peppers</a>
+							<a href="#" class="list-group-item list-group-item-action">Mushrooms</a>
+							<a href="#" class="list-group-item list-group-item-action" >Onions</a>
+							<a href="#" class="list-group-item list-group-item-action" >Jalapeno Peppers</a>
+						</div>
+					</div>
+					<div class="card-footer text-right">
+						<a href="#" class="btn btn-primary text-right">< Back</a>
+						<a href="#" class="btn btn-primary text-right">Checkout ></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		
 <!--		the start of the card for pizza option size-->
 		
 		
-		<div class=" container-fluid">
-			<div id="size_crust" class="card-header bg-primary text-white">
-				Choose size and crust
-			</div>
-			<div class="card-body">
-				<div class="list-group">
-					<p class="list-group-item  list-group-item text-dark bg-light ">
-						Hand Tossed
-					</p>
-					
-					<p  class="list-group-item list-group-item">Garlic seasoned crust with a rich, buttery taste.</p>
-					<a href="#" class="list-group-item list-group-item-action">Small(10")</a>
-					<a href="#" class="list-group-item list-group-item-action">Medium(12")</a>
-				</div>
-				
-				<div class="pt-5"></div>
-				<!--		<ul class="list-group list-group-flush">-->
-				<!--			<li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>-->
-				<!--			<li class="list-group-item">Small(10")</li>-->
-				<!--			<li class="list-group-item">Medium(12")</li>-->
-				<!--		</ul>-->
-				<div class="list-group">
-					<p class="list-group-item  list-group-item text-dark bg-light">
-						Crispy Thin
-					</p>
-					
-					<p class="list-group-item list-group-item">Thin enough for optimum crispy to crunchy ratio.</p>
-					<a href="#" class="list-group-item list-group-item-action">Medium(12")</a>
-					<a href="#" class="list-group-item list-group-item-action" >Large(14")</a>
-				</div>
-			</div>
-			<div class="card-footer text-right">
-				<a href="#" class="btn btn-primary text-right">Next Step ></a>
-			</div>
-		</div>
+	
 	</div>
 
 </section>
 
-#cheese and sauce option
+<!--cheese and sauce option-->
 
 <section>
-	<div class=" container-fluid">
-		<div id="cheese_op" class="card-header bg-primary text-white">
-			Choose cheese and sauce
-		</div>
-		<div class="card-body">
-			<div class="list-group">
-				<p class="list-group-item  list-group-item text-dark bg-light ">
-					Cheese
-				</p>
-				
-				<p  class="list-group-item list-group-item">Garlic seasoned crust with a rich, buttery taste.</p>
-				<a href="#" class="list-group-item list-group-item-action">Small(10")</a>
-				<a href="#" class="list-group-item list-group-item-action">Medium(12")</a>
-			</div>
-			
-			<div class="pt-5"></div>
-			<!--		<ul class="list-group list-group-flush">-->
-			<!--			<li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>-->
-			<!--			<li class="list-group-item">Small(10")</li>-->
-			<!--			<li class="list-group-item">Medium(12")</li>-->
-			<!--		</ul>-->
-			<div class="list-group">
-				<p class="list-group-item  list-group-item text-dark bg-light">
-					Sauce
-				</p>
-				
-				<p class="list-group-item list-group-item">Thin enough for optimum crispy to crunchy ratio.</p>
-				<a href="#" class="list-group-item list-group-item-action">Medium(12")</a>
-				<a href="#" class="list-group-item list-group-item-action" >Large(14")</a>
-			</div>
-		</div>
-		<div class="card-footer text-right">
-			<a href="#" class="btn btn-primary text-right">Next Step ></a>
-		</div>
-	</div>
+
 </section>
 
 

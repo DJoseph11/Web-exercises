@@ -18,7 +18,7 @@
 		
 		// TODO: This function needs to be called once every second
 		function updateTimer() {
-			if (detonationTimer == 0) {
+			if (detonationTimer === 0) {
 				alert('EXTERMINATE!');
 				document.body.innerHTML = '';
 			} else if (detonationTimer > 0) {
@@ -36,7 +36,7 @@
 		// cancel the interval/timeout for updateTimer()
 		function defuseTheBOM() {
 			clearInterval(defuseInterval)
-			alert("Defused bomb")
+			alert("Bomb is difused!!.")
 		}
 		
 		// Don't modify anything below this line!

@@ -8,6 +8,7 @@
 <body>
 
 <h1 id="main-header">Hello World!</h1>
+<button id="btn1">Click Here</button>
 <ul>
 	<li data-dbid="1">Item 1</li>
 	<li data-dbid="2">Item 2</li>
@@ -31,9 +32,14 @@
 		"use strict";
 		// TODO: Uncomment next line and get the main header element by id
 		var mainHeader = document.getElementById("main-header") ;
-
+		
 		// TODO: Set inner html of mainHeader to "JavaScript is Cool"
-		mainHeader.innerHTML = "JavaScript is Cool";
+		var butt = document.getElementById("btn1");
+		butt.addEventListener("click", function() {
+			mainHeader.innerHTML = "JavaScript is Cool";
+		})
+	
+		var btn1 = document.getElementById("btn1")
 		// TODO: Uncomment the next line and get the sub header element by id
 		var subHeader = document.getElementById("sub-header");
 		

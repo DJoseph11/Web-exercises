@@ -12,6 +12,7 @@ $(document).ready(function() {
 	alert(content)
 })
 
+
 // var content =  $("#item-list").html();
 //
 // alert(content);

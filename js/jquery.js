@@ -12,42 +12,36 @@
 // 	alert(content)
 // })
 
-$(document).ready(function() {
+// $(document).ready(function() {
 	
+// 	alert("the system is ready");
+
+
+	
+// 	})
+
+
+$(function(params) {
+	alert("The back is ready.");
 	$("h1").click(function() {
-		$(this).animate({left: "250px",})
-		// $(this).css()
-		
+		$(this).css("background-color", "red");
+	})
 
-		 $(this).mouseenter(function() {
-			 $(this).css("background-color", "blue").fadeOut(100)
-			 $(this).fadeIn(100)
-		 }).mouseleave(function() {
-			 $(this).css("background-color", "blue").fadeOut(100)
-			 $(this).fadeIn(100)
-		 })
+	$("p").dblclick(function(){
+		$(this).css("font-size", "18px")});
 
-		       
-
-	}).mouseleave(function() {
-		// $(this).css("background-color", "red")
-
-
-		$(this).mouseenter(function() {
-			$(this).fadeOut(1000)
-			$(this).css("background-color", "red").fadeIn(100)
-		}).mouseleave(function() {
-			$(this).fadeOut(1000)
-			$(this).css("background-color", "blue").fadeIn(100)
-		})
+	$("li").hover(function(e) {
+		$(this).css("color", "red");
+	}, function() {
+		$(this).css("color", "black")
 	})
 
 
-	alert("the system is ready");
-
-	  // $("h1").css("background-color")
 
 })
+
+
+
 
 
 

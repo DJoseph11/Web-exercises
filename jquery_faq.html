@@ -66,7 +66,7 @@
 		</dl>
 		
 		<ul>
-			<h3>Park Name</h3>
+			<h3 class="parkName">Park Name</h3>
 			<ul class="ul_1">
 				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias atque
 					consectetur consequatur culpa dolorum explicabo fuga illo in ipsa labore maiores natus,
@@ -78,7 +78,7 @@
 			</ul>
 			
 			
-			<h3>Park Name</h3>
+			<h3 class="parkName">Park Name</h3>
 			<ul class="ul_1">
 				<li>
 					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias atque
@@ -92,7 +92,7 @@
 			</ul>
 			
 			
-			<h3>Park Name</h3>
+			<h3 class="parkName">Park Name</h3>
 			<ul class="ul_1">
 				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias atque
 					consectetur consequatur culpa dolorum explicabo fuga illo in ipsa labore maiores natus,
@@ -143,17 +143,19 @@
 			$(this).css({backgroundColor: "yellow"});
 		});
 		
-		$("h3").click(function() {
-		alert("hello")
+		$(".parkName").click(function() {
+		// alert("hello")
 			
 			
-			$(".ul_1.textDecor").addClass("fontFirst")
+			$("li").each(function(index) {
+				 $(this).first().css({
+					 fontWeight: "bold"
+				 })
+			})
 			
 		})
 		
-		$("li").first().addClass("textDecor").css({
 		
-		})
 		
 		$("ul").css({
 			listStyle: "none",
@@ -168,11 +170,6 @@
 		
 		});
 			
-			$("li").click(function() {
-				// $(this).parents().children().first().css({
-				// 	color: "blue"
-				// })
-			})
 		
 		
 		

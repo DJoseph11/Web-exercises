@@ -4,8 +4,18 @@
 	<meta charset="UTF-8">
   <title>Title</title>
 	<style>
+		.invisibility {
+			/*visibility: hidden;*/
+			display: none;
+		}
 	    .fontFirst {
 			font-weight: bold;
+		}
+		.highlighter {
+			background-color: yellow;
+		}
+		.blue {
+			background-color: blue;
 		}
 		
 	</style>
@@ -121,67 +131,35 @@
 <script src="js/jQuery-2.2.4.js"></script>
 <script>
 	$(function () {
-		 console.log("Test is good");
+		 $( "dd" ).toggleClass( "invisibility") ;
+		 $("#showDisplay").click(function() {
+		 	$( "dd" ).toggleClass( "invisibility" )
+		 });
 		 
-		$("dd").addClass("invisible");
+		 $( "dt" ).click(function() {
+		 	$(this).toggleClass( "highlighter" );
+		 })
 		
-		$(".invisible").click(function () {
-			$("dd").hide();
+		$( ".btn" ).click(function() {
+		      $( "ul" ).each(function () {
+		      	$( this ).children().last().toggleClass( "highlighter" )
+			  })
 		})
 		
-		$( "#showDisplay" ).click(function() {
-			$("dd").show();
-			
-			});
-		
-		$("dt").click(function () {
-			$(this).css({backgroundColor: "yellow"});
-		});
-		
-		$(".parkName").click(function() {
-		// alert("hello")
-			
-			
-			$("li").each(function(index) {
-				 $(this).first().css({
-					 fontWeight: "bold"
-				 })
-			})
-			
+		$( ".parkName").click(function() {
+			$(this).next().children("li").first().toggleClass("fontFirst");
 		})
 		
+		$("li").click(function() {
+			$(this).parent().children().first().toggleClass("blue")
+		})
+		$("h3").click(function() {
+			$(this).next().slideToggle(1000)
+		})
 		
-		
-		$("ul").css({
-			listStyle: "none",
-		});
-		
-		$(".btn").click(function() {
-			
-			$(".ul_1").each(function(index) {
-				     $(this).children().last().css({
-					backgroundColor: "yellow"
-			})
-		
-		});
-			
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	});
 	
-		
-		
-		
-	})
 	
-	})
 	
 	
 	

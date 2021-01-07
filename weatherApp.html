@@ -100,16 +100,16 @@
 
 <main>
 	
-	<!-- The started of the title and card-->
+	<!-- The started of the search and title of card-->
 	
 	<section class="py-5 text-center container">
 		<div class="row py-lg-5">
 			<div class="col-lg-6 col-md-8 mx-auto">
 				<h1 class="fw-light mb-5"><span class="firstLetter" style="color:#6c8bc0 ">W</span>eather App </h1>
 				<div class="input-group mb-3">
-					<input type="text" class="form-control" placeholder="City name..." aria-label="City name..."
+					<input id="cityNameSearch" type="text" class="form-control cityNameSearch" placeholder="City name..." aria-label="City name..."
 						   aria-describedby="button-addon2">
-					<button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+					<button id="cityNameSearchButton" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
 				</div>
 			</div>
 		</div>
@@ -119,6 +119,8 @@
 	
 	<div class="album py-5 bg-light">
 		<div class="container">
+		
+<!--			container for the card city weather-->
 			
 			<div class="row ">
 				<div class="col-sm">
@@ -133,7 +135,27 @@
 						<div class="card-body">
 							
 							
-							<p class="card-text"><strong>City Name</strong></p>
+							<p class="card-text"><strong>Las Vegas</strong></p>
+							<div id="cityLoc"></div>
+						
+						</div>
+					</div>
+				</div>
+				
+				<!--	end of container for the card city weather-->
+				
+				
+				<div class="col-sm">
+					<div class="card shadow-sm">
+						<svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+							 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+							 preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+							<rect width="100%" height="100%" fill="#55595c"/>
+							<text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+						</svg>
+						
+						<div class="card-body">
+							<p class="card-text"><strong>San Antonio</strong></p>
 						
 						</div>
 					</div>
@@ -148,22 +170,7 @@
 						</svg>
 						
 						<div class="card-body">
-							<p class="card-text"><strong>City Name</strong></p>
-						
-						</div>
-					</div>
-				</div>
-				<div class="col-sm">
-					<div class="card shadow-sm">
-						<svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-							 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-							 preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#55595c"/>
-							<text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-						</svg>
-						
-						<div class="card-body">
-							<p class="card-text"><strong>City Name</strong></p>
+							<p class="card-text"><strong>San Diego</strong></p>
 						
 						</div>
 					</div>
@@ -179,7 +186,7 @@
 						</svg>
 						
 						<div class="card-body">
-							<p class="card-text"><strong>City Name</strong></p>
+							<p class="card-text"><strong>Atlanta</strong></p>
 						
 						</div>
 					</div>
@@ -194,7 +201,7 @@
 						</svg>
 						
 						<div class="card-body">
-							<p class="card-text"><strong>City Name</strong></p>
+							<p class="card-text"><strong>Miami</strong></p>
 						
 						</div>
 					</div>
@@ -247,21 +254,20 @@
 										
 										
 										<div class="card-header text-left">
+											
+											<!-- the card for the 5 day weather forecast-->
 
 											<ul class="list-group list-group-flush">
-												<li class="list-group-item"><p><strong>Temperature</strong><br/>
+												<li id="location"><p><strong>City Name</strong></li>
+												<li id="temperature" class=" temperature list-group-item "><p><strong>Temperature</strong><br/>
 													
-													<span class="weather-temperature"></span> (<span
-															class="weather-min-temperature"></span> min <span
-															class="weather-max-temperature">max</span>)</p>
+													<span id="weather-temperature"></span> (<span
+															id="weather-min-temperature"></span> min <span
+															id="weather-max-temperature">max</span>)</p>
 												</li>
-												<li class="list-group-item"><p><strong>Humidity</strong> <br/>
-													
-													<span class="weather-humidity"></span></p>
-												</li>
-												<li class="list-group-item"><p><strong>Wind speed</strong> <br/>
-													
-													<span class="weather-wind-speed"></span></p></li>
+												<li class="list-group-item humidity"><p><strong>Humidity: </strong><span id="humidity"></span>%</li>
+									
+												<li class="list-group-item wind"><p><strong>Wind speed:</strong><span id="weather-wind-speed"></span></p></li>
 												<li class="list-group-item">
 													<p><strong>Sunrise</strong> <br/>
 														

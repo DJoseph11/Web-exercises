@@ -1,6 +1,6 @@
 "use strict";
 
-$(function() {3
+$(function() {
 	console.log("am working")
 	let http = "https://api.openweathermap.org/data/2.5/weather";
 	let wUnits = "Imperial"
@@ -10,12 +10,11 @@ $(function() {3
 // ----------------------Lab #1-------------
 // Goal: to capture the input of the search field
 	
-// let testingLabOne = location.keypress(function(e){
-// 	if(e.keyCode == 13) {
-// 		searchButton.click();
-// 	}
-// })
+let time = Date.now() / 1000;
 
+console.log(time);
+
+// Shortcuts for jQuery
 let info = {
 	temperature: $("#temperature"),
 	tempMax: $("#weather-min-temperature"),
@@ -28,15 +27,42 @@ let info = {
 	searchButton: $("#cityNameSearchButton")
 }
 
-info.location.keypress(function(e){
+
+// this set the data on the html page layout
+let displayData = function(data) {
+	info.location.text(`${data.name}, ${data.sys.country}`);
+	info.temperature.text(`${data.main.temp}`);
+	info.tempMax.text(`${data.main.temp_max}`);
+	info.tempMin.text(`${data.main.temp_min}`);
+	info.humidity.text(`${data.main.humidity}`);
+	info.wind.text(`${data.wind.speed}`);
+	info.sunrise.text(`${data.sys.sunrise}`);
+	info.sunset.text(`${data.sys.sunset}`);
+	
+}
+
+
+// keyboard and mouse Events
+
+	info.location.keypress(function(e){
 		if(e.keyCode == 13) {
 			searchButton.click();
 		}
 	})
 	
 
+	info.searchButton.click(function(){
 
-			
+})
+//----------------------------------------------
+
+						
+// --------------------|    |-------------------
+
+
+// ----------------------Lab #2-------------
+
+
 
 
 
@@ -45,7 +71,14 @@ info.location.keypress(function(e){
 
 //----------------------------------------------
 
-	//AJAX call to OpenWeather API
+
+
+
+
+
+
+
+//AJAX call to OpenWeather API
 
 
 	// ${testCity}
@@ -65,29 +98,34 @@ info.location.keypress(function(e){
 		console.log(`sunrise: ${data.sys.sunrise}`);
 		console.log(`sunset: ${data.sys.sunset}`);
 		
-// testing of the search function
-// let k = $("#cityNameSearch");
+// let getData, setCardData,
 
-// var openWeatherData = function () {
-// console.log("am also working")
-// console.log(k.val())
-// 	if( k.val() !== "") {
-// 		k.searchLocation = $.get(`${http}`, {
-// 			APPID: openWeatherToken,
-// 			q:   `k.val(), US`,
-// 			units: wUnits
-		
-// 		}).done(function(data) {
-// 			// console.log(data)	
-// 		})
+// info = {
+// 	temperature: $("#temperature"),
+// 	tempMax: $("#weather-min-temperature"),
+// 	tempMin: $("#weather-max-temperature"),
+// 	humidity: $("#humidity"),
+// 	wind: $("#wind"),
+// 	location: $("#cityNameSearch"),
+// 	sunrise: $(".weather-sunrise"),
+// 	sunset: $(".weather-sunset"),
+// 	searchButton: $("#cityNameSearchButton")
+// }
 
-// 		// $.getJSON(k.searchLocation, function(data) {
-// 			// console.log(data)
-// 		// })
-// 	};
-// } 
+// info.location.keypress(function(e){
+// 		if(e.keyCode == 13) {
+// 			searchButton.click();
+// 		}
+// 	})
+	
 
-// console.log(openWeatherData($("#cityNameSearch").key()))
+// info.searchButton.click(function(){
+	
+// })
+
+
+
+
 
 
 

@@ -109,6 +109,10 @@
 				<div class="input-group mb-3">
 					<input id="cityNameSearch" type="text" class="form-control cityNameSearch" placeholder="City name..." aria-label="City name..."
 						   aria-describedby="button-addon2">
+
+						   <!-- search button -->
+
+
 					<button id="cityNameSearchButton" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
 				</div>
 			</div>
@@ -258,8 +262,8 @@
 											<!-- the card for the 5 day weather forecast-->
 
 											<ul class="list-group list-group-flush">
-												<li id="location"><p><strong>City Name</strong></li>
-												<li id="temperature" class=" temperature list-group-item "><p><strong>Temperature</strong><br/>
+												<li id="location" class="list-group-item"><p><strong>City Name</strong></li>
+												<li id="temperature" class=" temperature list-group-item "><p><strong>Temperature: </strong><br/>
 													
 													<span id="weather-temperature"></span> (<span
 															id="weather-min-temperature"></span> min <span
@@ -291,8 +295,8 @@
 												<li class="list-group-item"><p><strong>Temperature</strong><br/>
 													
 													<span class="weather-temperature"></span> (<span
-															class="weather-min-temperature"></span> min <span
-															class="weather-max-temperature">max</span>)</p>
+															id="weather-min-temperature" class="weather-min-temperature"></span> min <span
+															id="weather-max-temperature" class="weather-max-temperature">max</span>)</p>
 												</li>
 												<li class="list-group-item"><p><strong>Humidity</strong> <br/>
 													

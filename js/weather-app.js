@@ -2,9 +2,10 @@
 
 $(function() {
 	console.log("am working")
-	$("li").addClass("")
+	let http = "https://api.openweathermap.org/data/2.5/weather?q=";
+	let wUnits = "imperial"
 	//AJAX call to OpenWeather API
-	$.get("http://api.openweathermap.org/data/2.5/weather", {
+	$.get(http, {
 		appid: openWeatherToken,
 		q:     "San Antonio, US",
 		units: "imperial"
@@ -19,11 +20,29 @@ $(function() {
 		console.log(`sunset: ${data.sys.sunset}`);
 		console.log(data.keys);
 		console.log(data);
-
+		                                           +
 	});
+
+	info = {
+		openWeatherinfo = {
+			temperature: $(#temperature),
+			temp_max: $(#weather-min-temperature),
+			temp_min: $(#weather-max-temperature),
+			humidity: $(#humidity),
+			wind: $(#wind)
+		},
+
+
+	}
+	
 
 	// let iconUrl = '<img src='http://openweathermap.org/img/wn/' +
 	// data.weather[0].icon + '@2.png" width="50" height="50" />';
 	
 });
 	
+
+
+
+
+

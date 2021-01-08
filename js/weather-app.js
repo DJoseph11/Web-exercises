@@ -9,10 +9,15 @@ $(function() {
 
 // ----------------------Lab #1-------------
 // Goal: to capture the input of the search field
-	
-let time = Date.now() / 1000;
 
-console.log(time);
+// Time Block
+
+let [hour, minute, second] = new Date().toLocaleTimeString("en-US").split(/:| /);
+
+console.log(hour + ":" + minute);
+
+let [month, date, year]    = new Date().toLocaleDateString("en-US").split("/");
+
 
 // Shortcuts for jQuery
 let info = {
@@ -42,25 +47,56 @@ let displayData = function(data) {
 }
 
 
-// keyboard and mouse Events
+// keyboard Event to capture the enter key
 
-	info.location.keypress(function(e){
-		if(e.keyCode == 13) {
-			searchButton.click();
-		}
+		info.location.keypress(function(e){
+			// console.log(e)
+			if(e.keyCode == 13) {
+				info.searchButton.click();
+			}
+		})
+
+		info.searchButton.click(function(){
+		
+		$.get(`${http}`, {
+			APPID: openWeatherToken,
+			q: info.location.val() + ",US",
+			units: "imperial"
+		
+		}).done(function(data) {
+			info.location.text(`${data.name}, ${data.sys.country}`);
+			info.temperature.text(`${data.main.temp}`);
+			info.tempMax.text(`${data.main.temp_max}`);
+			info.tempMin.text(`${data.main.temp_min}`);
+			info.humidity.text(`${data.main.humidity}`);
+			info.wind.text(`${data.wind.speed}`);
+			info.sunrise.text(`${data.sys.sunrise}`);
+			info.sunset.text(`${data.sys.sunset}`);
+			console.log(data);
+		
+		
+		});
+
+
+		
+		
+console.log()
+
+
 	})
-	
 
-	info.searchButton.click(function(){
 
-})
 //----------------------------------------------
 
-						
+
 // --------------------|    |-------------------
 
 
 // ----------------------Lab #2-------------
+// goal: attach a working set and get data combo
+
+
+
 
 
 
@@ -83,56 +119,24 @@ let displayData = function(data) {
 
 	// ${testCity}
 
-	$.get(`${http}`, {
-		APPID: openWeatherToken,
-		q: "chicago, US",
-		units: "imperial"
+// $.get(`${http}`, {
+// 		APPID: openWeatherToken,
+// 		q: "chicago, US",
+// 		units: "imperial"
 	
-	}).done(function(data) {
-		console.log(`name: ${data.name}`)
-		console.log(`temp: ${data.main.temp}`);
-		console.log(`temp max: ${data.main.temp_max}`);
-		console.log(`temp min: ${data.main.temp_min}`);
-		console.log(`humidity: ${data.main.humidity}`);
-		console.log(`wind: ${data.wind.speed}`);
-		console.log(`sunrise: ${data.sys.sunrise}`);
-		console.log(`sunset: ${data.sys.sunset}`);
-		
-// let getData, setCardData,
-
-// info = {
-// 	temperature: $("#temperature"),
-// 	tempMax: $("#weather-min-temperature"),
-// 	tempMin: $("#weather-max-temperature"),
-// 	humidity: $("#humidity"),
-// 	wind: $("#wind"),
-// 	location: $("#cityNameSearch"),
-// 	sunrise: $(".weather-sunrise"),
-// 	sunset: $(".weather-sunset"),
-// 	searchButton: $("#cityNameSearchButton")
-// }
-
-// info.location.keypress(function(e){
-// 		if(e.keyCode == 13) {
-// 			searchButton.click();
-// 		}
-// 	})
-	
-
-// info.searchButton.click(function(){
-	
-// })
+// 	}).done(function(data) {
+// 		console.log(`name: ${data.name}`)
+// 		console.log(`temp: ${data.main.temp}`);
+// 		console.log(`temp max: ${data.main.temp_max}`);
+// 		console.log(`temp min: ${data.main.temp_min}`);
+// 		console.log(`humidity: ${data.main.humidity}`);
+// 		console.log(`wind: ${data.wind.speed}`);
+// 		console.log(`sunrise: ${data.sys.sunrise}`);
+// 		console.log(`sunset: ${data.sys.sunset}`);
+// 		console.log(data);
 
 
-
-
-
-
-
-		console.log(data);
-
-
-	});
+// 	});
 
 // ${cityNameSearch}
 })

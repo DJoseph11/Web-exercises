@@ -4,31 +4,35 @@ $(function() {3
 	console.log("am working")
 	let http = "https://api.openweathermap.org/data/2.5/weather";
 	let wUnits = "Imperial"
+	
 
-	let testCity = $("#cityNameSearch").key
 
 // ----------------------Lab #1-------------
 // Goal: to capture the input of the search field
 	
-var testingLabOne = location.keypress(function(e){
-	if(e.keyCode == 13) {
-		searchButton.click();
-	}
-})
+// let testingLabOne = location.keypress(function(e){
+// 	if(e.keyCode == 13) {
+// 		searchButton.click();
+// 	}
+// })
 
-// var	k = {
-// 	temperature = $("#temperature"),
-// 	tempMax = $("#weather-min-temperature"),
-// 	tempMin = $("#weather-max-temperature"),
-// 	humidity = $("#humidity"),
-// 	wind = $("#wind"),
-// 	location = $("#cityNameSearch"),
-// 	sunrise = $(".weather-sunrise"),
-// 	sunset = $(".weather-sunset"),
-// 	searchButton = $("#cityNameSearchButton")
+let info = {
+	temperature: $("#temperature"),
+	tempMax: $("#weather-min-temperature"),
+	tempMin: $("#weather-max-temperature"),
+	humidity: $("#humidity"),
+	wind: $("#wind"),
+	location: $("#cityNameSearch"),
+	sunrise: $(".weather-sunrise"),
+	sunset: $(".weather-sunset"),
+	searchButton: $("#cityNameSearchButton")
+}
 
-// }
-
+info.location.keypress(function(e){
+		if(e.keyCode == 13) {
+			searchButton.click();
+		}
+	})
 	
 
 
@@ -48,8 +52,8 @@ var testingLabOne = location.keypress(function(e){
 
 	$.get(`${http}`, {
 		APPID: openWeatherToken,
-		q: "Chicago, US",
-		units: wUnits
+		q: "chicago, US",
+		units: "imperial"
 	
 	}).done(function(data) {
 		console.log(`name: ${data.name}`)
@@ -94,26 +98,6 @@ var testingLabOne = location.keypress(function(e){
 
 // ${cityNameSearch}
 })
-
-	// info = {
-	// 	settings = {
-	// 		temperature: $(this.#temperature),
-	// 		temp_max: $(this.#weather-min-temperature),
-	// 		temp_min: $(this.#weather-max-temperature),
-	// 		humidity: $(this.#humidity),
-	// 		wind: $(this.#wind),
-	// 		location: $(this.#cityNameSearch),
-	// 		sunrise: $(weather-sunrise),
-	// 		sunset: $(weather-sunrise)
-	// 	},
-
-
-	// }
-	
-
-	// let iconUrl = '<img src='http://openweathermap.org/img/wn/' +
-	// data.weather[0].icon + '@2.png" width="50" height="50" />';
-	
 
 
 

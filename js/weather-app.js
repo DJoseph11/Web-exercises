@@ -7,12 +7,8 @@ $(function() {
 // ----------------------Lab #1-------------
 // Goal: to capture the input of the search field
 
-// Time Block
-
-let [month, date, year]    = new Date().toLocaleDateString("en-US").split("/");
-
 // Shortcuts for jQuery
-let getWeather, http, info = {
+var months, weekdays, m, w, d, getWeather, http, info = {
 	cityName:$("#cityNameDisplay"),
 	humidity: $("#humidity"),
 	location: $("#cityNameSearch"),
@@ -25,16 +21,26 @@ let getWeather, http, info = {
 	wind: $("#weather-wind-speed")
 }
 
+// More Shortcuts
+
 	http = "https://api.openweathermap.org/data/2.5/weather";
-	
+
+	d = new Date();
+
+	m = month[d.getMonth()];
+
+	w = weekday[d.getDay()];
+
+
 	getWeather = $.get(`${http}`, {
 		APPID: openWeatherToken,
 		q: "Miami ,US",
 		units: "imperial"
 	
-	})
+	});
 
 // keyboard Event to capture the enter key
+
 
 info.location.keypress(function(e){
 	// console.log(e)
@@ -78,22 +84,56 @@ info.searchButton.click(function(){
 
 
 // ----------------------Lab #2-------------
-// goal to convert sunrise and sunset
+// goal to make and automatic date display module
 
 
-
-let [hour, minute, second] = new Date().toLocaleTimeString("en-US").split(/:| /);
-
-console.log(myFunction() + " "+ months() + ", " + date)
+console.log(weekday() + " "+ month() + ", " + date)
 
 
+// code block for the months 
 
 
+function month() {
+	 months = [
+		 month = "Jan", 
+		 month = "Feb", 
+		 month = "Mar", 
+		 month = "Apr", 
+		 month = "May", 
+		 month = "Jun", 
+		 month = "Jul", 
+		 month = "Aug", 
+		 month = "Sep", 
+		 month = "Oct", 
+		 month = "Nov", 
+		 month = "Dec"
+		]
+
+		return m;
+
+	}
+
+	console.log(months())
 
 
+// code block for the weekdays
 
 
+function weekday() {
+	weekdays = [
+		weekday = "Sunday",
+		weekday = "Monday",
+		weekday = "Tuesday",
+		weekday = "Wednesday",
+		weekday = "Thursday",
+		weekday = "Friday",
+		weekday = "Saturday"
 
+	  ]
+	  
+	 return w;
+  
+  }
 //----------------------------------------------
 })
 
@@ -101,3 +141,4 @@ console.log(myFunction() + " "+ months() + ", " + date)
 
 
 
+	

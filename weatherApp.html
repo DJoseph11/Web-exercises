@@ -262,13 +262,22 @@
 											<!-- the card for the 5 day weather forecast-->
 
 											<ul class="list-group list-group-flush">
-												<li class="list-group-item"><p><strong >City Name: </strong><span id="location" ></span></li>
-												<li id="temperature" class=" temperature list-group-item "><p><strong>Temperature: </strong><br/>
+
+													<!-- City name -->
+
+												<li class="list-group-item">
+													<p><strong ><span id="cityNameDisplay" ></span></strong></li>
+
+												<li class=" temperature list-group-item ">
+													<p><strong>Temperature</strong><br/>
+														<span id="temperature" ></span>
+														<!-- <span id="weather-temperature1"></span> (<span
 													
-													<span id="weather-temperature1"></span> (<span
-															id="weather-min-temperature2"></span> min <span
-															id="weather-max-temperature3">max</span>)</p>
+															id="weather-min-temperature"></span> min: <span
+															id="weather-max-temperature">max</span>)</p> -->
 												</li>
+													
+													<!-- humidity -->
 												
 												<li class="list-group-item humidity">
 													<p><strong>Humidity</strong><br/>
@@ -278,7 +287,7 @@
 
 												<li  class="list-group-item ">
 													<p><strong>Wind speed</strong><br/>
-														<span class="weather-wind-speed"></span></p></li>
+														<span id="weather-wind-speed"></span></p></li>
 
 													<!-- day/night -->
 

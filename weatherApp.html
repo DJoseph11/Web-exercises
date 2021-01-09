@@ -107,9 +107,6 @@
 			<div class="col-lg-6 col-md-8 mx-auto">
 				<h1 class="fw-light mb-5"><span class="firstLetter" style="color:#6c8bc0 ">W</span>eather App </h1>
 				<div class="input-group mb-3">
-
-					<!-- input field for the city search -->
-
 					<input id="cityNameSearch" type="text" class="form-control cityNameSearch" placeholder="City name..." aria-label="City name..."
 						   aria-describedby="button-addon2">
 
@@ -265,30 +262,43 @@
 											<!-- the card for the 5 day weather forecast-->
 
 											<ul class="list-group list-group-flush">
-												<li id="location" class="list-group-item"><p><strong>City Name: </strong></li>
+												<li class="list-group-item"><p><strong >City Name: </strong><span id="location" ></span></li>
 												<li id="temperature" class=" temperature list-group-item "><p><strong>Temperature: </strong><br/>
 													
 													<span id="weather-temperature1"></span> (<span
 															id="weather-min-temperature2"></span> min <span
 															id="weather-max-temperature3">max</span>)</p>
 												</li>
-												<li class="list-group-item humidity"><p><strong>Humidity: </strong><span id="humidity"></span>%</li>
+												
+												<li class="list-group-item humidity">
+													<p><strong>Humidity</strong><br/>
+														<span id="humidity"></span>%</li>
 									
-												<li class="list-group-item wind"><p><strong>Wind speed:</strong><span id="weather-wind-speed"></span></p></li>
+													<!-- wind speed -->
+
+												<li  class="list-group-item ">
+													<p><strong>Wind speed</strong><br/>
+														<span class="weather-wind-speed"></span></p></li>
+
+													<!-- day/night -->
+
 												<li class="list-group-item">
 													<p><strong>Sunrise</strong> <br/>
-														
 														<span class="weather-sunrise"></span></p></li>
-												<li class="list-group-item"><p><strong>Sunset</strong> <br/>
+														
+
+
+												<li class="list-group-item">
+													<p><strong>Sunset</strong> <br/>
+														<span class="weather-sunset"></span></p></li>
 													
-													<span class="weather-sunset"></span></p></li>
 											
 											</ul>
 										
 										</div>
 									</div>
 								</div>
-								<div class="col-sm">
+								<!-- <div class="col-sm">
 									<div class="card col">
 										
 										
@@ -420,7 +430,7 @@
 										
 										</div>
 									</div>
-								</div>
+								</div> -->
 							
 							</div>
 						</div>

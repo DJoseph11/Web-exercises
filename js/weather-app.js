@@ -86,6 +86,8 @@ info.searchButton.click(function(){
 // ----------------------Lab #2-------------
 // goal to make and automatic date display module
 
+let [month, date, year]    = new Date().toLocaleDateString("en-US").split("/")
+
 
 console.log(weekday() + " "+ month() + ", " + date)
 
@@ -93,25 +95,29 @@ console.log(weekday() + " "+ month() + ", " + date)
 // code block for the months 
 
 
-function month() {
-	 months = [
-		 month = "Jan", 
-		 month = "Feb", 
-		 month = "Mar", 
-		 month = "Apr", 
-		 month = "May", 
-		 month = "Jun", 
-		 month = "Jul", 
-		 month = "Aug", 
-		 month = "Sep", 
-		 month = "Oct", 
-		 month = "Nov", 
-		 month = "Dec"
-		]
+// function month() { 
+// 	{
+// 	 months = [
+// 		 month = "Jan", 
+// 		 month = "Feb", 
+// 		 month = "Mar", 
+// 		 month = "Apr", 
+// 		 month = "May", 
+// 		 month = "Jun", 
+// 		 month = "Jul", 
+// 		 month = "Aug", 
+// 		 month = "Sep", 
+// 		 month = "Oct", 
+// 		 month = "Nov", 
+// 		 month = "Dec"
+// 		]
+		
 
-		return m;
+// 		return m;
+// 	}
 
-	}
+
+// 	}
 
 	console.log(months())
 
@@ -138,7 +144,8 @@ function weekday() {
 })
 
 
-
+// ----------------------Lab #2-------------
 
 
 	
+//----------------------------------------------

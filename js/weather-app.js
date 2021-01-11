@@ -8,7 +8,7 @@ $(function() {
 // Goal: to capture the input of the search field
 
 // Shortcuts for jQuery
-var months, weekdays, m, w, d, getWeather, http, info = {
+var m, w, d, getWeather, http, info = {
 	cityName:$("#cityNameDisplay"),
 	humidity: $("#humidity"),
 	location: $("#cityNameSearch"),
@@ -25,25 +25,18 @@ var months, weekdays, m, w, d, getWeather, http, info = {
 
 	http = "https://api.openweathermap.org/data/2.5/weather";
 
-	d = new Date();
-
-	m = month[d.getMonth()];
-
-	w = weekday[d.getDay()];
-
-
-	getWeather = $.get(`${http}`, {
-		APPID: openWeatherToken,
-		q: "Miami ,US",
-		units: "imperial"
+	// getWeather = $.get(`${http}`, {
+	// 	APPID: openWeatherToken,
+	// 	q:,
+	// 	units: "imperial"
 	
-	});
+	// });
 
 // keyboard Event to capture the enter key
 
 
 info.location.keypress(function(e){
-	// console.log(e)
+	console.log(e)
 	if(e.keyCode == 13) {
 		info.searchButton.click();
 	}
@@ -86,18 +79,18 @@ info.searchButton.click(function(){
 // ----------------------Lab #2-------------
 // goal to make and automatic date display module
 
-let [month, date, year]    = new Date().toLocaleDateString("en-US").split("/")
+// let [month, date, year]    = new Date().toLocaleDateString("en-US").split("/")
 
 
-console.log(weekday() + " "+ month() + ", " + date)
+// console.log(weekday() + " "+ month() + ", " + date)
 
 
 // code block for the months 
 
 
-// function month() { 
+// function monthAll() { 
 // 	{
-// 	 months = [
+// 	 month = [
 // 		 month = "Jan", 
 // 		 month = "Feb", 
 // 		 month = "Mar", 
@@ -119,27 +112,32 @@ console.log(weekday() + " "+ month() + ", " + date)
 
 // 	}
 
-	console.log(months())
 
 
 // code block for the weekdays
 
 
-function weekday() {
-	weekdays = [
-		weekday = "Sunday",
-		weekday = "Monday",
-		weekday = "Tuesday",
-		weekday = "Wednesday",
-		weekday = "Thursday",
-		weekday = "Friday",
-		weekday = "Saturday"
+// function weekdayAll() {
+// 	weekday = [
+// 		weekday = "Sunday",
+// 		weekday = "Monday",
+// 		weekday = "Tuesday",
+// 		weekday = "Wednesday",
+// 		weekday = "Thursday",
+// 		weekday = "Friday",
+// 		weekday = "Saturday"
 
-	  ]
+// 	  ]
 	  
-	 return w;
+// 	 return w;
+// 	console.log(w)
   
-  }
+//   }
+
+//   weekdayAll()
+//   monthAll
+
+
 //----------------------------------------------
 })
 

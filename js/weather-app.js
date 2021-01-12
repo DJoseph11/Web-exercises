@@ -25,12 +25,12 @@ var m, w, d, getWeather, http, info = {
 
 	http = "https://api.openweathermap.org/data/2.5/weather";
 
-	// getWeather = $.get(`${http}`, {
-	// 	APPID: openWeatherToken,
-	// 	q:,
-	// 	units: "imperial"
+	getWeather = $.get(`${http}`, {
+		APPID: openWeatherToken,
+		q:     info.location,
+		units: "imperial"
 	
-	// });
+	});
 
 // keyboard Event to capture the enter key
 

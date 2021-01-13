@@ -36,6 +36,23 @@ const users = [
     }
 ];
 
-let l = users.filter( lang => lang.languages > 2);
+// let l = users.filter( lang => lang.languages.length > 3);
 
-console.log(l);
+// // console.log(l);
+// language is greater than 3 
+// a loop for users to find each indexes user with the property language
+
+// let lang = users.forEach( a => {
+//     if(a.languages.length >= 3) {
+//         console.log(a)
+//     }
+    
+// })
+
+let l = users.filter( lang => lang.languages.length >= 3)
+
+console.log(l)
+
+let e = users.map( lang => lang.email);
+
+console.log(e)

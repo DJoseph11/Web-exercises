@@ -49,30 +49,34 @@ const users = [
     
 // })
 
+// the lang replaced the users const in the callback function
 let l = users.filter( lang => lang.languages.length >= 3);
 
 console.log(l);
 
+// the same below for the same solution
 let e = users.map( lang => lang.email);
 
 console.log(e);
 
-// let y = users.reduce((obj, current) => Object.assign(obj, {
-//     [current.yearsOfExperience]: current.yearsOfExperience
-// }));
-let y = users.reduce((obj, current) => {
-    for(let i of current) {
-        console.log(i)
-    }
-    // console.log(obj);
-    // let years = []
-    // years.push(current.yearsOfExperience)
-    // console.log(years)
-    // console.log(current.yearsOfExperience)
-    // current.yearsOfExperience
-
-// console.log(current.yearsOfExperience)
-
-});
+//  total is the accumulation to store the what is being processed from the users objects
+// which was replaced by the years as the second argument which gives the option of passing the
+// years.(users.properties)
+let y = users.reduce((total, years) => {
+    return (total + years.yearsOfExperience) ;
+},0) / users.length;
 
 console.log(y);
+
+// let long = users.reduce((currentLongest, user) =>  user.email.length > currentLongest.email.length ? user : currentLongest, user[0])
+// console.log(long)
+
+let n = users.reduce((listName, user) => {
+    let b = [];
+    if(listName.indexOf(user) === -1) {
+        b.push(user);
+    }
+    return b
+})
+
+console.log(n)

@@ -49,10 +49,30 @@ const users = [
     
 // })
 
-let l = users.filter( lang => lang.languages.length >= 3)
+let l = users.filter( lang => lang.languages.length >= 3);
 
-console.log(l)
+console.log(l);
 
 let e = users.map( lang => lang.email);
 
-console.log(e)
+console.log(e);
+
+// let y = users.reduce((obj, current) => Object.assign(obj, {
+//     [current.yearsOfExperience]: current.yearsOfExperience
+// }));
+let y = users.reduce((obj, current) => {
+    for(let i of current) {
+        console.log(i)
+    }
+    // console.log(obj);
+    // let years = []
+    // years.push(current.yearsOfExperience)
+    // console.log(years)
+    // console.log(current.yearsOfExperience)
+    // current.yearsOfExperience
+
+// console.log(current.yearsOfExperience)
+
+});
+
+console.log(y);

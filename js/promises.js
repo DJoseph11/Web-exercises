@@ -1,5 +1,21 @@
 
-    
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // .then(data => console(data))
 
 
@@ -51,17 +67,17 @@ myPromise.then(res => {
 });
 
 
-function getHubUserName() {
-    return myPromise.then(res => res.json());
+const getHubUserName = () => {
+    return fetch("https://api.github.com/users").then(res => res.json());
 }
 
-// getHubUserName().then(users => {
-//     users.forEach(user => {
-//         console.log(user.login);
-//     });
-// }).catch(error => {
-//     console.error(error)
-// })
+getHubUserName().then(users => {
+    users.forEach(user => {
+        console.log(user.login);
+    });
+}).catch(error => {
+    console.error(error)
+})
 
 const secondPromise = new Promise((resolve, reject) => {
     if (Math.random() > 0.5) {
@@ -71,4 +87,4 @@ const secondPromise = new Promise((resolve, reject) => {
         }
 })
 
-console.log(SecondPromise)
+console.log(SecondPromise())
